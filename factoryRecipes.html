@@ -1,0 +1,184 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-gb" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>FactoryMod Recipes - ShenanigansMC's CivRealms Help</title>
+<link rel="stylesheet" href="./css/factoryRecipes.css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <p>ShenanigansMC's CivRealms Help</p>
+  <a href="index.html">Home</a>
+  <a href="factoryRecipes.html" class="sidenav-selected">Factory Recipes</a>
+</div>
+
+<!-- Page content -->
+<div class="main" >
+
+	<div class="top-notification"> 
+		<p>
+			This tool was originally made by <a href="https://github.com/TealNerd" style="color:#f1f1f1; "><u>TealNerd</u></a>
+			<br>
+			Ported and improved by ShenanigansMC for CivRealms
+		</p>
+	</div>
+	
+	<div class="split left">
+		<input style="width: 100%; color: #000;" type="text" id="search" onkeyup="searchfunction()" placeholder="Search..."></input>
+		<table style="width: 100%; display: block; overflow-y: scroll;" class="table" id="factorylist"></table>
+	</div>
+
+	<div class="split right">
+		<h1 id="factoryName">Factory</h1>
+		<h2 id="setup">Setup Cost:</h2>
+		<h2>Recipes:</h2>
+		<div id="recipes" style="margin-left: 20px; max-height: 50%" class="pre-scrollable"></div>
+	</div> 
+  
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
+	<script>
+		var config;
+		var factories;
+		var recipes;
+		var totalHealth;
+
+		$(document).ready(() => {
+			$.get("https://raw.githubusercontent.com/Shenanigans-MC/realms-factorymod/master/factoryConfig.yml", (data) => {
+				config = YAML.parse(data);
+				factories = config.factories;
+				recipes = config.recipes;
+				totalHealth = config.default_health;
+				$.each(factories, (key, value) => {
+					$("#factorylist").append('<tr><td><a href="#FactoryMod" onclick="selectFactory(this); return false;" id="' + key + '">' + value.name + '</a></td></tr>');
+				});
+				loadFactory(factories[Object.keys(factories)[0]]);
+			});
+		});
+
+		function loadFactory(factory) {
+	        $("#recipes").scrollTop(0);
+	        $("#factoryName").text(factory.name);
+	        $("#recipes").html("");
+	        $("#setup").html("");
+	        if(factory.setupcost) {
+	            $("#setup").html("Setup Cost: ");
+	            $.each(factory.setupcost, function(key, value){
+	                $("#setup").append(value.amount + " " + key.replace(/_/g, ' ') + ", ");
+	            });
+	        } else {
+	            $.each(recipes, function(name, recipe) {
+	                if(recipe.type === "UPGRADE" && recipe.factory === factory.name) {
+	                    $.each(factories, function(id, f) {
+	                        if(f.recipes !== undefined && f.recipes.includes(name)) {
+	                            $("#setup").html('Upgrades from <a href="" onclick="selectFactory(this); return false;" id="' + f.name + '">' + f.name + "</a> with ");
+	                            $.each(recipe.input, function(key, item) {
+	                                $("#setup").append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                            });
+	                        }
+	                    });
+	                }
+	            });
+	        }
+	        var setupCost = $("#setup").html();
+	        setupCost = setupCost.substring(0, setupCost.length - 2);
+	        $("#setup").html(setupCost);
+	        var fuelName = Object.keys(config.default_fuel)[0];
+	        if(factory.fuel) {
+	            fuelName = Object.keys(factory.fuel)[0];
+	        }
+	        $.each(factory.recipes, function(i, name) {
+	            var recipe = recipes[name];
+	            $("#recipes").append('<div style="margin: 0 auto;">');
+	            $("#recipes").append('<h3>' + recipe.name + '</h3>');
+	            $("#recipes").append('<h4 id="in_' + name + '" style="margin-left: 20px">Input: </h4>');
+	            $.each(recipe.input, function(key, item) {
+	                $("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	            });
+	            var text = $("#in_" + name).html();
+	            text = text.substring(0, text.length - 2);
+	            $("#in_" + name).html(text);
+	            if(recipe.type === "PRODUCTION") {
+	                $("#recipes").append('<h4 id="out_' + name + '" style="margin-left: 20px">Output: </h4>');
+	                $.each(recipe.output, function(key, item) {
+	                    $("#out_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                });
+	                var txt = $("#out_" + name).html();
+	                txt = txt.substring(0, txt.length - 2);
+	                $("#out_" + name).html(txt);
+	            } else if(recipe.type === "UPGRADE") {
+	                $("#recipes").append('<h4 style="margin-left: 20px">Upgrades to: <a href="" onclick="selectFactory(this); return false;" id="' + recipe.factory + '">' + recipe.factory + '</a></h4>');
+	            } else if(recipe.type === "REPAIR") {
+	                var percent = (recipe.health_gained * 100) / totalHealth;
+	                $("#recipes").append('<h4 style="margin-left: 20px">Repairs ' + percent.toString() + '% health</h4>');
+	            } else  if(recipe.type === "RANDOM") {
+	                $("#recipes").append('<h4 id="out_' + name + '" style="margin-left: 20px">Outputs: </h4>');
+	                $("#recipes").append('<ul id="list_' + name + '" style="margin-left: 20px">');
+	                $.each(recipe.outputs, function(key, item) {
+	                    var percent = item.chance * 100;
+	                    if(percent < 0) {
+	                        percent = percent.toPrecision(1);
+	                    }
+	                    percent = percent.toString() + '%';
+	                    $("#list_" + name).append('<li>' + item[key].amount + ' ' + key.replace(/_/g, ' ') + ' with ' + percent + ' chance</li>');
+	                });
+	                $("#recipes").append('</ul>');
+	            }
+	            var prod_time = config.default_update_time;
+	            if(recipe.production_time) {
+	                prod_time = recipe.production_time;
+	            }
+	            $("#recipes").append('<h4 style="margin-left: 20px"> Production Time: ' + prod_time + '</h4>');
+	            var interval = parseInt(config.default_fuel_consumption_intervall);
+	            if(factory.fuel_consumption_intervall) {
+	                interval = parseInt(factory.fuel_consumption_intervall);
+	            }
+	            var famount = parseInt(prod_time) / interval;
+	            $("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + famount + " " + fuelName + '</h4>');
+	            $("#recipes").append('</div>');
+	        });
+	    }
+	    
+	    function selectFactory(link) {
+	        var factory = factories[link.id];
+	        if(!factory) {
+	            $.each(factories, function(key, value) {
+	                if(value.name === link.id) {
+	                    loadFactory(value);
+	                }
+	            });
+	        } else {
+	            loadFactory(factory);
+	        }
+	    }
+
+	    function searchfunction() {
+	        var input, filter, table, tr, td, i;
+	        input = document.getElementById("search");
+	        filter = input.value.toUpperCase();
+	        table = document.getElementById("factorylist");
+	        tr = table.getElementsByTagName("tr");
+	        for(i = 0; i < tr.length; i++) {
+	            td = tr[i].getElementsByTagName("td")[0];
+	            if(td) {
+	                if(td.innerHTML.toUpperCase().indexOf(filter) > -1) {
+	                    tr[i].style.display = "";
+	                } else {
+	                    tr[i].style.display = "none";
+	                }
+	            }
+	        }
+	    }
+	</script>
+</div> 
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-gb" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Home - ShenanigansMC's CivRealms Help</title>
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <p>ShenanigansMC's CivRealms Help</p>
+  <a href="index.html" class="sidenav-selected">Home</a>
+  <a href="factoryRecipes.html">Factory Recipes</a>
+</div>
+
+<!-- Page content -->
+<div class="main">
+	<h1>What is this website?</h1>
+	<p>
+		This website is a collection of guides and tools designed to be useful for both new and old players on CivRealms <br> <br>
+		Have any feedback or ideas for new pages? Feel free to message me: ShenanigansMC#8841 on Discord
+	
+	</p>
+	
+	<h1>What is CivRealms?</h1>
+	<p>From the Subreddit:</p>
+	<p class="text-quote">
+		CivRealms Minecraft encourages players to form and act out dynamic politics in a sandbox world with limited resources. Our plugins allow players police each other and reasonably fortify their own creations. This allows players to create and maintain communities and civilizations that can withstand common griefers, allowing for deeper and more interesting political & economic gameplay.
+	</p>
+	<p>Find out more at the Discord server: <a href="https://discord.gg/JKQywRv">https://discord.gg/JKQywRv</a></p>
+	
+</div> 
+
+<script type="application/javascript">
+function startSearch() {
+	var searchTerm = document.getElementById("textSearch").value
+	document.getElementById("searchOutput").innerHTML = searchTerm;
+	
+	
+	var xhttp;  
+  	
+  	if (str == "") {
+    	document.getElementById("searchOutput").innerHTML = "";
+    	return;
+  	}
+  	
+  	xhttp = new XMLHttpRequest();
+  	xhttp.onreadystatechange = function() {
+  		if (this.readyState == 4 && this.status == 200) {
+    		document.getElementById("searchOutput").innerHTML = this.responseText;
+    	}
+ 	};
+  	xhttp.open("GET", "searchEngine.asp?q="+str, true);
+  	xhttp.send();
+}
+
+
+</script> 
+
+</body>
+
+
+</html>
