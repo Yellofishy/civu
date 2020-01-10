@@ -24,7 +24,9 @@
 
 	<div class="top-notification"> 
 		<p>
-			This tool was originally made by <a href="https://github.com/TealNerd" style="color:#f1f1f1; "><u>TealNerd</u></a>
+			This tool was originally made by 
+			<a href="https://github.com/TealNerd"><u>TealNerd</u></a> 
+			<a href="https://github.com/Shenanigans-MC/realmsguides/blob/master/licences/factorymod-civclassic-licence">(license)</a> 
 			<br>
 			Ported and improved by ShenanigansMC for CivRealms
 		</p>
@@ -52,7 +54,7 @@
 		var totalHealth;
 
 		$(document).ready(() => {
-			$.get("https://raw.githubusercontent.com/Shenanigans-MC/realms-factorymod/master/factoryConfig.yml", (data) => {
+			$.get("https://raw.githubusercontent.com/Shenanigans-MC/realmsguides/master/factoryConfig.yml", (data) => {
 				config = YAML.parse(data);
 				factories = config.factories;
 				recipes = config.recipes;
