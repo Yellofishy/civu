@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-gb" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>Home - ShenanigansMC's CivRealms Help</title>
+<link href="css/changelog.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+	<!-- Side navigation -->
+	<div class="sidenav">
+	  <p>ShenanigansMC's CivRealms Help</p>
+	  <a href="index">Home</a>
+	  <a href="factoryRecipes">Factory Recipes</a>
+	  <a href="changelog" class="sidenav-selected">Changelog</a>
+	</div>
+
+	<!-- Page content -->
+	<div class="main">
+		<div id="updates" style="margin-left: 20px; max-height: 50%" class="pre-scrollable"></div>
+	
+
+	<script>
+		var config;
+		var updates;
+
+		(function() {
+			//$.get("https://raw.githubusercontent.com/Shenanigans-MC/realmsguides/master/changelog.yml", (data) => {
+			    var rawFile = new XMLHttpRequest();
+				rawFile.open("GET", "changelog.txt", false);
+				rawFile.onreadystatechange = function ()
+				{
+					if(rawFile.readyState === 4)
+					{
+						if(rawFile.status === 200 || rawFile.status == 0)
+						{
+							var allText = rawFile.responseText;
+							var lines = allText.split("\n");
+							lines.forEach(formatLine);
+						}
+					}
+				}
+				rawFile.send(null);
+		})();
+		
+		function formatLine(item) {
+			var node = document.createElement("p");
+			
+			if (item.charAt(0) == '#') {
+				node.className = "update title";
+				node.innerHTML = item.substring(2);
+				
+			} else {
+				node.className = "update changes";
+				node.innerHTML = item;
+			}
+			
+			
+			
+			document.getElementById("updates").appendChild(node);
+			
+		}
+		
+		function appendLine(line) {
+			                 // Create a <li> node
+			node.innerHTML = line;
+			
+
+		}
+		
+
+	</script>
+</div> 
+
+</body>
+
+
+</html>
