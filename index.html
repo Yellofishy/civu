@@ -37,31 +37,6 @@
 	
 </div> 
 
-<script type="application/javascript">
-function startSearch() {
-	var searchTerm = document.getElementById("textSearch").value
-	document.getElementById("searchOutput").innerHTML = searchTerm;
-	
-	
-	var xhttp;  
-  	
-  	if (str == "") {
-    	document.getElementById("searchOutput").innerHTML = "";
-    	return;
-  	}
-  	
-  	xhttp = new XMLHttpRequest();
-  	xhttp.onreadystatechange = function() {
-  		if (this.readyState == 4 && this.status == 200) {
-    		document.getElementById("searchOutput").innerHTML = this.responseText;
-    	}
- 	};
-  	xhttp.open("GET", "searchEngine.asp?q="+str, true);
-  	xhttp.send();
-}
-
-
-</script> 
 
 </body>
 
