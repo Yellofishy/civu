@@ -53,9 +53,16 @@
 		var factories;
 		var recipes;
 		var totalHealth;
+		var iconTable;
+
+
 
 		$(document).ready(() => {
-			$.get("https://raw.githubusercontent.com/Shenanigans-MC/realmsguides/master/factoryConfig-custom.yml", (data) => {
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryIcons.txt", (data) => {
+				iconTable = csvToArray(data);
+			})
+
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryConfig-custom.yml", (data) => {
 				config = YAML.parse(data);
 				factories = config.factories;
 				recipes = config.recipes;
@@ -65,9 +72,14 @@
 				});
 				loadFactory(factories[Object.keys(factories)[0]]);
 			});
+
+
+			
 		});
 
 		function loadFactory(factory) {
+			console.log(iconTable);
+
 	        $("#recipes").scrollTop(0);
 	        $("#factoryName").text(factory.name);
 	        $("#recipes").html("");
@@ -101,7 +113,7 @@
 	        $.each(factory.recipes, function(i, name) {
 	            var recipe = recipes[name];
 	            $("#recipes").append('<div style="margin: 0 auto;">');
-	            $("#recipes").append('<h3>' + recipe.name + '</h3>');
+	            $("#recipes").append('<h3>' + attachIcon(recipe.name) + '</h3>');
 	            $("#recipes").append('<h4 id="in_' + name + '" style="margin-left: 20px">Input: </h4>');
 	            $.each(recipe.input, function(key, item) {
 	                $("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
@@ -148,6 +160,8 @@
 	            $("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + famount + " " + fuelName + '</h4>');
 	            $("#recipes").append('</div>');
 	        });
+
+
 	    }
 	    
 	    function selectFactory(link) {
@@ -180,6 +194,45 @@
 	            }
 	        }
 	    }
+		
+		function attachIcon(input) {
+			var output = input;
+			console.log("start");
+			
+			for (i = 0; i < iconTable.length; i++) {
+				if (input.indexOf(iconTable[i][0]) > 0) {
+					output = insertIntoString(input, '<img src="' + iconTable[i][1] + '" align="top">',input.indexOf(iconTable[i][0]));
+					break;
+				}
+			} 
+
+			// if (input.indexOf("Cracked Stone Brick")>=0) {
+			// 	//output = input.substring(0,input.indexOf("Cracked Stone Brick")) + '<img src="img/mc/items/apple.png">' + input.substring(input.indexOf("Cracked Stone Brick"));
+			// 	output = insertIntoString(input, '<img src="img/mc/blocks/stonebrick_cracked.png" align="top">',input.indexOf("Cracked Stone Brick"));
+			// } else {
+			// 	output = input;
+			// }
+		
+			return output;
+		}
+
+		function csvToArray (csv) {
+			rows = csv.split("\n");
+
+			return rows.map(function (row) {
+				return row.split(",");
+			});
+		};
+
+		function insertIntoString(originalString, subString, position) {
+			return [originalString.slice(0, position), subString, originalString.slice(position)].join('');
+		}
+
+
+
+
+		
+		
 	</script>
 </div> 
 </body>
