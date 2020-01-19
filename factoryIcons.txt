@@ -18,12 +18,18 @@ Pack Ice, /img/mc/blocks/ice_packed.png
 charcoal, /img/mc/items/charcoal.png
 moss stone brick, /img/mc/blocks/stonebrick_mossy.png
 circle stone brick, /img/mc/blocks/stonebrick_carved.png
+redstone, /img/mc/items/redstone_dust.png
 stone brick, /img/mc/blocks/stonebrick.png
 stone, /img/mc/blocks/stone.png
 cobble, /img/mc/blocks/cobblestone.png
 water, /img/mc/items/bucket_water.png
+lava, /img/mc/items/bucket_lava.png
+milk, /img/mc/items/bucket_milk.png
+bucket, /img/mc/items/bucket_empty.png
 lapis, /img/mc/items/dye_powder_blue.png
 ink, /img/mc/items/dye_powder_black.png
 glowstone, /img/mc/blocks/glowstone.png
-redstone, /img/mc/items/redstone_dust.png
 packed ice, /img/mc/blocks/ice_packed.png
+dye, /img/mc/items/dye_powder_white.png
+vine, /img/mc/blocks/vine.png
+ice, /img/mc/blocks/ice.png
