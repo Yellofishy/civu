@@ -1,5 +1,5 @@
-Cracked Stone Brick, /img/mc/blocks/stonebrick_cracked.png
-Mossy Stone Brick, /img/mc/blocks/stonebrick_mossy.png
-Chiseled Stone Brick, /img/mc/blocks/stonebrick_carved.png
-Quartz, /img/mc/items/quartz.png
-Andesite, /img/mc/blocks/stone_andesite.png
+quartz, /img/mc/blocks/quartz_block_bottom.png
+cracked_stone_brick, /img/mc/blocks/stonebrick_cracked.png
+moss_stone_brick, /img/mc/blocks/stonebrick_mossy.png
+circle_stone_brick, /img/mc/blocks/stonebrick_carved.png
+andesite, /img/mc/blocks/stone_andesite.png
