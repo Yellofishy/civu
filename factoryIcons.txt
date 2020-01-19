@@ -19,6 +19,7 @@ charcoal, /img/mc/items/charcoal.png
 moss stone brick, /img/mc/blocks/stonebrick_mossy.png
 circle stone brick, /img/mc/blocks/stonebrick_carved.png
 redstone, /img/mc/items/redstone_dust.png
+glowstone, /img/mc/blocks/glowstone.png
 stone brick, /img/mc/blocks/stonebrick.png
 cobble, /img/mc/blocks/cobblestone.png
 stone, /img/mc/blocks/stone.png
@@ -28,7 +29,6 @@ milk, /img/mc/items/bucket_milk.png
 bucket, /img/mc/items/bucket_empty.png
 lapis, /img/mc/items/dye_powder_blue.png
 ink, /img/mc/items/dye_powder_black.png
-glowstone, /img/mc/blocks/glowstone.png
 packed ice, /img/mc/blocks/ice_packed.png
 dye, /img/mc/items/dye_powder_white.png
 vine, /img/mc/blocks/vine.png
