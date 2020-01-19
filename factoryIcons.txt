@@ -1,4 +1,4 @@
-quartz, /img/mc/blocks/quartz_block_bottom.png
+Make Quartz, /img/mc/blocks/quartz_block_bottom.png
 cracked_stone_brick, /img/mc/blocks/stonebrick_cracked.png
 moss_stone_brick, /img/mc/blocks/stonebrick_mossy.png
 circle_stone_brick, /img/mc/blocks/stonebrick_carved.png
