@@ -3,3 +3,15 @@ cracked_stone_brick, /img/mc/blocks/stonebrick_cracked.png
 moss_stone_brick, /img/mc/blocks/stonebrick_mossy.png
 circle_stone_brick, /img/mc/blocks/stonebrick_carved.png
 andesite, /img/mc/blocks/stone_andesite.png
+mossy_cobble, /img/mc/blocks/cobblestone_mossy.png
+diorite, /img/mc/blocks/stone_diorite.png
+granite, /img/mc/blocks/stone_granite.png
+red_sand, /img/mc/blocks/red_sand.png
+sand, /img/mc/blocks/sand.png
+prismarine, /img/mc/blocks/prismarine_rough.png
+prismarine_bricks, /img/mc/blocks/prismarine_bricks.png
+dark_prismarine, /img/mc/blocks/prismarine_dark.png
+sea_lantern, /img/mc/blocks/sea_lantern.png
+redstone_lamp, /img/mc/blocks/redstone_lamp_off.png
+packed_ice, /img/mc/blocks/ice_packed.png
+
