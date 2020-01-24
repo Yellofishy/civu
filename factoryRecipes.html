@@ -59,6 +59,7 @@
 
 		$(document).ready(() => {
 			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryIcons.txt", (data) => {
+			//$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryIcons.txt", (data) => {
 				iconTable = csvToArray(data);
 			})
 
@@ -116,7 +117,8 @@
 	            $("#recipes").append('<h3>' + attachIcon(recipe.name) + '</h3>');
 	            $("#recipes").append('<h4 id="in_' + name + '" style="margin-left: 20px">Input: </h4>');
 	            $.each(recipe.input, function(key, item) {
-	                $("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                //$("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ' , ');
+	                $("#in_" + name).append(attachIcon(key, item.amount) + ', ');
 	            });
 	            var text = $("#in_" + name).html();
 	            text = text.substring(0, text.length - 2);
@@ -124,7 +126,8 @@
 	            if(recipe.type === "PRODUCTION") {
 	                $("#recipes").append('<h4 id="out_' + name + '" style="margin-left: 20px">Output: </h4>');
 	                $.each(recipe.output, function(key, item) {
-	                    $("#out_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                    //$("#out_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                    $("#out_" + name).append(attachIcon(key, item.amount) + ', ');
 	                });
 	                var txt = $("#out_" + name).html();
 	                txt = txt.substring(0, txt.length - 2);
@@ -157,7 +160,7 @@
 	                interval = parseInt(factory.fuel_consumption_intervall);
 	            }
 	            var famount = parseInt(prod_time) / interval;
-	            $("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + famount + " " + fuelName + '</h4>');
+	            $("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + attachIcon(fuelName,famount) + '</h4>');
 	            $("#recipes").append('</div>');
 	        });
 
@@ -195,25 +198,63 @@
 	        }
 	    }
 		
-		function attachIcon(input) {
-			var output = input;
-			console.log("start");
-			
+		function attachIcon(input, number) {
+
+
+			var output;
+			var hasFoundIcon = false;
+
+			// for each line in iconTable
 			for (i = 0; i < iconTable.length; i++) {
-				if (input.indexOf(iconTable[i][0]) > 0) {
-					output = insertIntoString(input, '<img src="' + iconTable[i][1] + '" align="top">',input.indexOf(iconTable[i][0]));
+				// Ignore this line if its empty
+				if (iconTable[i][0] == "") {
+					continue;
+				}
+
+
+				var queryLocation = input.toLowerCase().replace(/_/g, ' ').indexOf(iconTable[i][0].toLowerCase())
+				if (queryLocation != -1) {
+
+					if (number != null) {
+						input = number + " " + input;
+					} 
+					// insert before item name
+					output = insertIntoString(toTitleCase(input.replace(/_/g, ' ')), makeImage(iconTable[i][1]), queryLocation);
+					
+
+
+
+					// insert after item name
+					//output = input.replace(/_/g, ' ') + " " + makeImage(iconTable[i][1]);
+					hasFoundIcon = true;
+
+					
+				
 					break;
 				}
-			} 
 
-			// if (input.indexOf("Cracked Stone Brick")>=0) {
-			// 	//output = input.substring(0,input.indexOf("Cracked Stone Brick")) + '<img src="img/mc/items/apple.png">' + input.substring(input.indexOf("Cracked Stone Brick"));
-			// 	output = insertIntoString(input, '<img src="img/mc/blocks/stonebrick_cracked.png" align="top">',input.indexOf("Cracked Stone Brick"));
-			// } else {
-			// 	output = input;
-			// }
+			}
+
+			if (hasFoundIcon == false) {
+				return input.replace(/_/g, ' ') + " []";
+
+			} else {
+				return output;
+			}
+
 		
-			return output;
+			
+		}
+
+		function toTitleCase(str) {
+			return str.replace(/\w\S*/g, function(txt){
+				return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+			});
+		}
+
+		function makeImage(url) {
+			return '<img src="' + url + '" align="top">';
+
 		}
 
 		function csvToArray (csv) {

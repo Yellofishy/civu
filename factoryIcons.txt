@@ -1,1 +1,37 @@
+Repair Factory, /img/mc/repair.png
+Quartz, /img/mc/blocks/quartz_block_bottom.png
 Cracked Stone Brick, /img/mc/blocks/stonebrick_cracked.png
+Mossy Stone Brick, /img/mc/blocks/stonebrick_mossy.png
+Chiseled Stone Brick, /img/mc/blocks/stonebrick_carved.png
+Andesite, /img/mc/blocks/stone_andesite.png
+Mossy Cobble, /img/mc/blocks/cobblestone_mossy.png
+Diorite, /img/mc/blocks/stone_diorite.png
+Granite, /img/mc/blocks/stone_granite.png
+red_sand, /img/mc/blocks/red_sand.png
+Red SAND, /img/mc/blocks/sand.png
+Prismarine Bricks, /img/mc/blocks/prismarine_bricks.png
+Dark Prismarine, /img/mc/blocks/prismarine_dark.png
+Prismarine, /img/mc/blocks/prismarine_rough.png
+Sea Lantern, /img/mc/blocks/sea_lantern.png
+Redstone Lamp, /img/mc/blocks/redstone_lamp_off.png
+Pack Ice, /img/mc/blocks/ice_packed.png
+charcoal, /img/mc/items/charcoal.png
+moss stone brick, /img/mc/blocks/stonebrick_mossy.png
+circle stone brick, /img/mc/blocks/stonebrick_carved.png
+redstone, /img/mc/items/redstone_dust.png
+glowstone, /img/mc/blocks/glowstone.png
+stone brick, /img/mc/blocks/stonebrick.png
+cobble, /img/mc/blocks/cobblestone.png
+stone, /img/mc/blocks/stone.png
+water, /img/mc/items/bucket_water.png
+lava, /img/mc/items/bucket_lava.png
+milk, /img/mc/items/bucket_milk.png
+bucket, /img/mc/items/bucket_empty.png
+lapis, /img/mc/items/dye_powder_blue.png
+ink, /img/mc/items/dye_powder_black.png
+packed ice, /img/mc/blocks/ice_packed.png
+dye, /img/mc/items/dye_powder_white.png
+vine, /img/mc/blocks/vine.png
+ice, /img/mc/blocks/ice.png
+sand, /img/mc/blocks/sand.png
+flesh, /img/mc/items/rotten_flesh.png
