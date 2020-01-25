@@ -54,6 +54,7 @@
 		var recipes;
 		var totalHealth;
 		var iconTable;
+		var itemNameTable;
 
 
 
@@ -63,7 +64,12 @@
 				iconTable = csvToArray(data);
 			})
 
-			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryConfig-custom.yml", (data) => {
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/6ba19d507bdaab3f8122d500b8118ccba5e74e2b/mcItemNames.txt", (data) => {
+				itemNameTable = csvToArray(data);
+			})
+
+			//$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryConfig-custom.yml", (data) => {
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryConfig-original.yml", (data) => {
 				config = YAML.parse(data);
 				factories = config.factories;
 				recipes = config.recipes;
@@ -79,7 +85,6 @@
 		});
 
 		function loadFactory(factory) {
-			console.log(iconTable);
 
 	        $("#recipes").scrollTop(0);
 	        $("#factoryName").text(factory.name);
@@ -118,7 +123,7 @@
 	            $("#recipes").append('<h4 id="in_' + name + '" style="margin-left: 20px">Input: </h4>');
 	            $.each(recipe.input, function(key, item) {
 	                //$("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ' , ');
-	                $("#in_" + name).append(attachIcon(key, item.amount) + ', ');
+	                $("#in_" + name).append(attachIcon(item.material, item.amount, item.durability) + ', ');
 	            });
 	            var text = $("#in_" + name).html();
 	            text = text.substring(0, text.length - 2);
@@ -127,7 +132,7 @@
 	                $("#recipes").append('<h4 id="out_' + name + '" style="margin-left: 20px">Output: </h4>');
 	                $.each(recipe.output, function(key, item) {
 	                    //$("#out_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
-	                    $("#out_" + name).append(attachIcon(key, item.amount) + ', ');
+	                    $("#out_" + name).append(attachIcon(key, item.amount, item.durability) + ', ');
 	                });
 	                var txt = $("#out_" + name).html();
 	                txt = txt.substring(0, txt.length - 2);
@@ -198,11 +203,28 @@
 	        }
 	    }
 		
-		function attachIcon(input, number) {
+		function attachIcon(input, number, durability) {
+			
+			// // no durability given
+			// if (durability == undefined) {
+			// 	durability=0;
 
+			// }
+			// var nameAndDurability = input.toLowerCase() + ":" + durability
+			// if (durability >= 1) {
+			// 	console.log(nameAndDurability);
+			// }
+
+			// return input;
+
+
+			//console.log("attaching icon to item " + input + " , " + number + " , " + durability);
 
 			var output;
 			var hasFoundIcon = false;
+
+			input = ConvertItemToFriendlyName(input, durability);
+
 
 			// for each line in iconTable
 			for (i = 0; i < iconTable.length; i++) {
@@ -211,32 +233,33 @@
 					continue;
 				}
 
-
-				var queryLocation = input.toLowerCase().replace(/_/g, ' ').indexOf(iconTable[i][0].toLowerCase())
+				// store location of current line of iconTable in the input string
+				var queryLocation = input.toLowerCase().replace(/_/g, ' ').indexOf(iconTable[i][0].toLowerCase());
+				
+				// if the current line is present in the input string
 				if (queryLocation != -1) {
 
+					// if a item count was given, add the number to the block name
 					if (number != null) {
 						input = number + " " + input;
 					} 
-					// insert before item name
+
+					// insert icon before the item name (and stack count)
+					// ie "Make [icon] 64 Stone Bricks"
 					output = insertIntoString(toTitleCase(input.replace(/_/g, ' ')), makeImage(iconTable[i][1]), queryLocation);
 					
-
-
-
-					// insert after item name
-					//output = input.replace(/_/g, ' ') + " " + makeImage(iconTable[i][1]);
+					// Remember that a icon was added, for possible later use
 					hasFoundIcon = true;
 
-					
-				
+					// Stop looking for more icon matches
 					break;
 				}
 
 			}
 
 			if (hasFoundIcon == false) {
-				return input.replace(/_/g, ' ') + " []";
+				//return input.replace(/_/g, ' ') + " []";
+				return output;
 
 			} else {
 				return output;
@@ -253,7 +276,8 @@
 		}
 
 		function makeImage(url) {
-			return '<img src="' + url + '" align="top">';
+			return "";
+			//return '<img src="' + url + '" align="top">';
 
 		}
 
@@ -267,6 +291,48 @@
 
 		function insertIntoString(originalString, subString, position) {
 			return [originalString.slice(0, position), subString, originalString.slice(position)].join('');
+		}
+
+		function ConvertItemToFriendlyName(itemName, durability) {
+			// no durability given
+			if (durability == undefined) {
+				durability=0;
+
+			}
+
+			var output = "";
+			var nameAndDurability = itemName.toLowerCase() + ":" + durability
+			//console.log("looking to match " + nameAndDurability);
+
+
+
+			// Any durability value accepted
+			if (durability == -1) {
+				output += "Any ";
+			} 
+
+			// for each line in itemNameTable
+			for (i = 0; i < itemNameTable.length; i++) {
+				// Ignore this line if its empty
+				if (itemNameTable[i][0] == "") {
+					continue;
+				}
+
+				//console.log(nameAndDurability + " - " + itemNameTable[i][0].toLowerCase());
+
+				// if the current line is present in the input string
+				if (nameAndDurability == itemNameTable[i][0].toLowerCase()) {
+					//console.log("matched " + itemNameTable[i][0] + " to " + nameAndDurability);
+					output += itemNameTable[i][1];
+
+					return output;
+				}
+
+			}
+
+			return itemName + " ###ERROR###"; 
+
+
 		}
 
 
