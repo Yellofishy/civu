@@ -53,9 +53,23 @@
 		var factories;
 		var recipes;
 		var totalHealth;
+		var iconTable;
+		var itemNameTable;
+
+
 
 		$(document).ready(() => {
-			$.get("https://raw.githubusercontent.com/Shenanigans-MC/realmsguides/master/factoryConfig-custom.yml", (data) => {
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryIcons.txt", (data) => {
+			//$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryIcons.txt", (data) => {
+				iconTable = csvToArray(data);
+			})
+
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/mcItemNames.txt", (data) => {
+				itemNameTable = csvToArray(data);
+			})
+
+			//$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryConfig-custom.yml", (data) => {
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/master/factoryConfig-original.yml", (data) => {
 				config = YAML.parse(data);
 				factories = config.factories;
 				recipes = config.recipes;
@@ -65,9 +79,13 @@
 				});
 				loadFactory(factories[Object.keys(factories)[0]]);
 			});
+
+
+			
 		});
 
 		function loadFactory(factory) {
+
 	        $("#recipes").scrollTop(0);
 	        $("#factoryName").text(factory.name);
 	        $("#recipes").html("");
@@ -101,10 +119,13 @@
 	        $.each(factory.recipes, function(i, name) {
 	            var recipe = recipes[name];
 	            $("#recipes").append('<div style="margin: 0 auto;">');
+	           // $("#recipes").append('<h3>' + attachIconDeprecated(recipe.name) + '</h3>');
 	            $("#recipes").append('<h3>' + recipe.name + '</h3>');
 	            $("#recipes").append('<h4 id="in_' + name + '" style="margin-left: 20px">Input: </h4>');
 	            $.each(recipe.input, function(key, item) {
-	                $("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                //$("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ' , ');
+	                //$("#in_" + name).append(attachIconDeprecated(item.material, item.amount, item.durability) + ', ');
+	                $("#in_" + name).append(attachIcon(item) + ', ');
 	            });
 	            var text = $("#in_" + name).html();
 	            text = text.substring(0, text.length - 2);
@@ -112,7 +133,9 @@
 	            if(recipe.type === "PRODUCTION") {
 	                $("#recipes").append('<h4 id="out_' + name + '" style="margin-left: 20px">Output: </h4>');
 	                $.each(recipe.output, function(key, item) {
-	                    $("#out_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                    //$("#out_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
+	                    //$("#out_" + name).append(attachIconDeprecated(key, item.amount, item.durability) + ', ');
+	                    $("#out_" + name).append(attachIcon(item) + ', ');
 	                });
 	                var txt = $("#out_" + name).html();
 	                txt = txt.substring(0, txt.length - 2);
@@ -145,9 +168,12 @@
 	                interval = parseInt(factory.fuel_consumption_intervall);
 	            }
 	            var famount = parseInt(prod_time) / interval;
+	            //$("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + attachIconDeprecated(fuelName,famount) + '</h4>');
 	            $("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + famount + " " + fuelName + '</h4>');
 	            $("#recipes").append('</div>');
 	        });
+
+
 	    }
 	    
 	    function selectFactory(link) {
@@ -180,6 +206,172 @@
 	            }
 	        }
 	    }
+
+		function attachIcon(item) {
+			var output = item.material;
+
+			if (item.durability == undefined) {
+				item.durability = 0;
+			}
+
+			// Fix bug with Compact recipe not specifying amount
+			if (item.amount == undefined) {
+				item.amount = 0;
+			}
+					
+			var itemNameAndDurability = item.material.toUpperCase() + ":" + item.durability;
+
+			// for each line in iconTable
+			for (i = 0; i < itemNameTable.length; i++) {
+				if (itemNameTable[i][0].toUpperCase() == itemNameAndDurability) {
+					output = itemNameTable[i][1];
+					break;
+				}
+			}
+
+			output = item.amount + " " + output;
+
+
+			return output;
+		}
+		
+		function attachIconDeprecated(input, number, durability) {
+			
+			// // no durability given
+			// if (durability == undefined) {
+			// 	durability=0;
+
+			// }
+			// var nameAndDurability = input.toLowerCase() + ":" + durability
+			// if (durability >= 1) {
+			// 	console.log(nameAndDurability);
+			// }
+
+			// return input;
+
+
+			//console.log("attaching icon to item " + input + " , " + number + " , " + durability);
+
+			var output;
+			var hasFoundIcon = false;
+
+			input = ConvertItemToFriendlyName(input, durability);
+
+
+			// for each line in iconTable
+			for (i = 0; i < iconTable.length; i++) {
+				// Ignore this line if its empty
+				if (iconTable[i][0] == "") {
+					continue;
+				}
+
+				// store location of current line of iconTable in the input string
+				var queryLocation = input.toLowerCase().replace(/_/g, ' ').indexOf(iconTable[i][0].toLowerCase());
+				
+				// if the current line is present in the input string
+				if (queryLocation != -1) {
+
+					// if a item count was given, add the number to the block name
+					if (number != null) {
+						input = number + " " + input;
+					} 
+
+					// insert icon before the item name (and stack count)
+					// ie "Make [icon] 64 Stone Bricks"
+					output = insertIntoString(toTitleCase(input.replace(/_/g, ' ')), makeImage(iconTable[i][1]), queryLocation);
+					
+					// Remember that a icon was added, for possible later use
+					hasFoundIcon = true;
+
+					// Stop looking for more icon matches
+					break;
+				}
+
+			}
+
+			if (hasFoundIcon == false) {
+				//return input.replace(/_/g, ' ') + " []";
+				return output;
+
+			} else {
+				return output;
+			}
+
+		
+			
+		}
+
+		function toTitleCase(str) {
+			return str.replace(/\w\S*/g, function(txt){
+				return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
+			});
+		}
+
+		function makeImage(url) {
+			return "";
+			//return '<img src="' + url + '" align="top">';
+
+		}
+
+		function csvToArray (csv) {
+			rows = csv.split("\n");
+
+			return rows.map(function (row) {
+				return row.split(",");
+			});
+		};
+
+		function insertIntoString(originalString, subString, position) {
+			return [originalString.slice(0, position), subString, originalString.slice(position)].join('');
+		}
+
+		function ConvertItemToFriendlyName(itemName, durability) {
+			// no durability given
+			if (durability == undefined) {
+				durability=0;
+
+			}
+
+			var output = "";
+			var nameAndDurability = itemName.toLowerCase() + ":" + durability
+			//console.log("looking to match " + nameAndDurability);
+
+
+
+			// Any durability value accepted
+			if (durability == -1) {
+				output += "Any ";
+			} 
+
+			// for each line in itemNameTable
+			for (i = 0; i < itemNameTable.length; i++) {
+				// Ignore this line if its empty
+				if (itemNameTable[i][0] == "") {
+					continue;
+				}
+
+				//console.log(nameAndDurability + " - " + itemNameTable[i][0].toLowerCase());
+
+				// if the current line is present in the input string
+				if (nameAndDurability == itemNameTable[i][0].toLowerCase()) {
+					//console.log("matched " + itemNameTable[i][0] + " to " + nameAndDurability);
+					output += itemNameTable[i][1];
+
+					return output;
+				}
+
+			}
+
+			return itemName + " ###ERROR###"; 
+
+
+		}
+
+
+
+
+		
+		
 	</script>
 </div> 
 </body>
