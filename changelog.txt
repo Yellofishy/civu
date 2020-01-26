@@ -1,11 +1,16 @@
 # Possible Upcoming Features
-	  (Note that this is just a list of things I am considering, no promises)
+    (Note that this is just a list of things I am considering, no promises)
     - Item search page, with details on how to obtain the item (factory recipe/crafting) + possibly other info
     - Make factory recipes look nicer, possibly some item icons?
+    - Differntiation between claims/city bastion on Factory Recipes?
+    - Lored item differentiation (esp. compacted stuff)
     - General plugin guides, such as ItemExchange and Factory basics
     - Server intro guide -> link to more detailed plugin guides?
+# 25 Jan 2020
+    - ADDED: More friendly names to Factory Recipes page
+      (eg: "Oak Sapling", "Any Sapling", "Exile Pearl", etc)
 # 15 Jan 2020
-	- ADDED: Possible Upcoming Features list
+    - ADDED: Possible Upcoming Features list
 # 13 Jan 2020
     - ADDED: Changelogs page
 # 12 Jan 2020
