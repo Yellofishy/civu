@@ -64,7 +64,7 @@
 				iconTable = csvToArray(data);
 			})
 
-			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/6ba19d507bdaab3f8122d500b8118ccba5e74e2b/mcItemNames.txt", (data) => {
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/5bd1493e423b3cdeceba4ecd238c1d33831594f9/mcItemNames.txt", (data) => {
 				itemNameTable = csvToArray(data);
 			})
 
@@ -119,11 +119,13 @@
 	        $.each(factory.recipes, function(i, name) {
 	            var recipe = recipes[name];
 	            $("#recipes").append('<div style="margin: 0 auto;">');
-	            $("#recipes").append('<h3>' + attachIcon(recipe.name) + '</h3>');
+	           // $("#recipes").append('<h3>' + attachIconDeprecated(recipe.name) + '</h3>');
+	            $("#recipes").append('<h3>' + recipe.name + '</h3>');
 	            $("#recipes").append('<h4 id="in_' + name + '" style="margin-left: 20px">Input: </h4>');
 	            $.each(recipe.input, function(key, item) {
 	                //$("#in_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ' , ');
-	                $("#in_" + name).append(attachIcon(item.material, item.amount, item.durability) + ', ');
+	                //$("#in_" + name).append(attachIconDeprecated(item.material, item.amount, item.durability) + ', ');
+	                $("#in_" + name).append(attachIcon(item) + ', ');
 	            });
 	            var text = $("#in_" + name).html();
 	            text = text.substring(0, text.length - 2);
@@ -132,7 +134,8 @@
 	                $("#recipes").append('<h4 id="out_' + name + '" style="margin-left: 20px">Output: </h4>');
 	                $.each(recipe.output, function(key, item) {
 	                    //$("#out_" + name).append(item.amount + " " + key.replace(/_/g, ' ') + ', ');
-	                    $("#out_" + name).append(attachIcon(key, item.amount, item.durability) + ', ');
+	                    //$("#out_" + name).append(attachIconDeprecated(key, item.amount, item.durability) + ', ');
+	                    $("#out_" + name).append(attachIcon(item) + ', ');
 	                });
 	                var txt = $("#out_" + name).html();
 	                txt = txt.substring(0, txt.length - 2);
@@ -165,7 +168,8 @@
 	                interval = parseInt(factory.fuel_consumption_intervall);
 	            }
 	            var famount = parseInt(prod_time) / interval;
-	            $("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + attachIcon(fuelName,famount) + '</h4>');
+	            //$("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + attachIconDeprecated(fuelName,famount) + '</h4>');
+	            $("#recipes").append('<h4 style="margin-left: 20px"> Fuel: ' + famount + " " + fuelName + '</h4>');
 	            $("#recipes").append('</div>');
 	        });
 
@@ -202,8 +206,36 @@
 	            }
 	        }
 	    }
+
+		function attachIcon(item) {
+			var output = item.material;
+
+			if (item.durability == undefined) {
+				item.durability = 0;
+			}
+
+			// Fix bug with Compact recipe not specifying amount
+			if (item.amount == undefined) {
+				item.amount = 0;
+			}
+					
+			var itemNameAndDurability = item.material.toUpperCase() + ":" + item.durability;
+
+			// for each line in iconTable
+			for (i = 0; i < itemNameTable.length; i++) {
+				if (itemNameTable[i][0].toUpperCase() == itemNameAndDurability) {
+					output = itemNameTable[i][1];
+					break;
+				}
+			}
+
+			output = item.amount + " " + output;
+
+
+			return output;
+		}
 		
-		function attachIcon(input, number, durability) {
+		function attachIconDeprecated(input, number, durability) {
 			
 			// // no durability given
 			// if (durability == undefined) {
