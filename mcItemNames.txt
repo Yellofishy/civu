@@ -249,7 +249,7 @@ gold_nugget:0,Gold Nugget
 gold_ore:0,Gold Ore
 gold_pickaxe:0,Gold Pickaxe
 gold_plate:0,Weighted Pressure Plate (Light)
-gold_record,Music Disk (13)
+gold_record:0,Music Disk (13)
 gold_spade:0,Gold Shovel
 gold_sword:0,Gold Sword
 golden_apple:0,Golden Apple
@@ -257,7 +257,7 @@ golden_apple:1,Enchanted Golden Apple
 grass:0,Grass
 grass_path:0,Grass Path
 gravel:0,Gravel
-green_record,Music Disk (cat)
+green_record:0,Music Disk (cat)
 grilled_pork:0,Cooked Porkchop
 gunpowder:0,Gunpowder (Sulphur)
 hard_clay:0,Hardened Clay
@@ -501,17 +501,17 @@ rail:0,Rail
 raw_beef:0,Raw Beef
 raw_chicken:0,Raw Chicken
 raw_fish:0,Raw Fish
-record_3,Music Disk (blocks)
-record_4,Music Disk (chirp)
-record_5,Music Disk (far)
-record_6,Music Disk (mall)
-record_7,Music Disk (mellohi)
-record_8,Music Disk (stal)
-record_9,Music Disk (strad)
-record_10,Music Disk (ward)
-record_11,Music Disk (11)
-record_12,Music Disk (wait)
-record_13,Music Disk (13)
+record_3:0,Music Disk (blocks)
+record_4:0,Music Disk (chirp)
+record_5:0,Music Disk (far)
+record_6:0,Music Disk (mall)
+record_7:0,Music Disk (mellohi)
+record_8:0,Music Disk (stal)
+record_9:0,Music Disk (strad)
+record_10:0,Music Disk (ward)
+record_11:0,Music Disk (11)
+record_12:0,Music Disk (wait)
+record_13:0,Music Disk (13)
 record_blocks:0,Music Disk (Blocks)
 record_cat:0,Music Disk (Cat)
 record_chirp:0,Music Disk (Chirp)
