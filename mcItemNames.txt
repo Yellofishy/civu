@@ -33,7 +33,6 @@ beacon:0,Beacon
 bed:0,Bed
 bed:0,Bed (Block)
 bedrock:0,Bedrock
-beef:0,Raw Beef
 beetroot:0,Beetroot
 beetroot_seeds:0,Beetroot Seeds
 beetroot_soup:0,Beetroot Soup
@@ -48,18 +47,18 @@ boat:0,Boat
 bone:0,Bone
 bone_block:0,Bone Block
 book:0,Book
+book_and_quill:0,Book and Quill
 bookshelf:0,Bookshelf
 bow:0,Bow
 bowl:0,Bowl
 bread:0,Bread
-brewing_stand:0,Brewing Stand
 brewing_stand:0,Brewing Stand (Block)
+brewing_stand_item:0,Brewing Stand
 brick:0,Clay Brick
 brick_block:0,Brick
 brick_stairs:0,Brick Stairs
 brown_mushroom:0,Brown Mushroom
 brown_mushroom_block:0,Brown Mushroom (Block)
-huge_mushroom_1:14,Brown Mushroom (Block)
 bucket:0,Empty Bucket
 cactus:0,Cactus
 cake:0,Cake
@@ -80,18 +79,17 @@ carpet:12,Brown Carpet
 carpet:13,Green Carpet
 carpet:14,Red Carpet
 carpet:15,Black Carpet
-carrot:0,Carrot
+carrot_item:0,Carrot
 carrot_on_a_stick:0,Carrot on a Stick
 carrots:0,Carrot
-cauldron:0,Cauldron
 cauldron:0,Cauldron (Block)
+cauldron_item:0,Cauldron
 chainmail_boots:0,Chainmail Boots
 chainmail_chestplate:0,Chainmail Chestplate
 chainmail_helmet:0,Chainmail Helmet
 chainmail_leggings:0,Chainmail Leggings
 chest:0,Chest
 chest_minecart:0,Storage Minecart
-chicken:0,Raw Chicken
 chorus_flower:0,Chorus Flower
 chorus_fruit:0,Chorus Fruit
 chorus_fruit_popped:0,Popped Chorus Fruit
@@ -109,16 +107,30 @@ cobblestone_wall:1,Mossy Cobblestone Wall
 cocoa:0,Cocoa Plant
 command_block:0,Command Block
 command_block_minecart:0,Command Block Minecart
-comparator:0,Comparator
 compass:0,Compass
+concrete_powder:0,White Concrete Powder
+concrete_powder:1,Orange Concrete Powder
+concrete_powder:2,Magenta Concrete Powder
+concrete_powder:3,Light Blue Concrete Powder
+concrete_powder:4,Yellow Concrete Powder
+concrete_powder:5,Lime Concrete Powder
+concrete_powder:6,Pink Concrete Powder
+concrete_powder:7,Gray Concrete Powder
+concrete_powder:8,Light Gray Concrete Powder
+concrete_powder:9,Cyan Concrete Powder
+concrete_powder:10,Purple Concrete Powder
+concrete_powder:11,Blue Concrete Powder
+concrete_powder:12,Brown Concrete Powder
+concrete_powder:13,Green Concrete Powder
+concrete_powder:14,Red Concrete Powder
+concrete_powder:15,Black Concrete Powder
 cooked_beef:0,Steak
 cooked_chicken:0,Cooked Chicken
-cooked_fished:0,Cooked Fish
-cooked_fished:1,Cooked Salmon
-cooked_fished:2,Clownfish
-cooked_fished:3,Pufferfish
+cooked_fish:0,Cooked Fish
+cooked_fish:1,Cooked Salmon
+cooked_fish:2,Clownfish
+cooked_fish:3,Pufferfish
 cooked_mutton:0,Cooked Mutton
-cooked_porkchop:0,Cooked Porkchop
 cooked_rabbit:0,Cooked Rabbit
 cookie:0,Cookie
 crafting_table:0,Workbench
@@ -133,17 +145,18 @@ deadbush:0,Dead Shrub
 detector_rail:0,Detector Rail
 diamond:0,Diamond
 diamond_axe:0,Diamond Axe
+diamond_barding:0,Diamond Horse Armor
 diamond_block:0,Diamond Block
 diamond_boots:0,Diamond Boots
 diamond_chestplate:0,Diamond Chestplate
 diamond_helmet:0,Diamond Helmet
 diamond_hoe:0,Diamond Hoe
-diamond_horse_armor:0,Diamond Horse Armor
 diamond_leggings:0,Diamond Leggings
 diamond_ore:0,Diamond Ore
 diamond_pickaxe:0,Diamond Pickaxe
-diamond_shovel:0,Diamond Shovel
+diamond_spade:0,Diamond Shovel
 diamond_sword:0,Diamond Sword
+diode:0,Redstone Repeater
 dirt:0,Dirt
 dirt:1,Coarse Dirt
 dirt:2,Podzol
@@ -189,9 +202,9 @@ end_portal_frame:0,End Portal Frame
 end_rod:0,End rod
 end_stone:0,End Stone
 ender_chest:0,Ender Chest
-ender_eye:0,Eye of Ender
 ender_pearl:0,Exile Pearl
 experience_bottle:0,Bottle of Enchanting
+eye_of_ender:0,Eye of Ender
 farmland:0,Farmland
 feather:0,Feather
 fence:0,Oak Fence
@@ -199,10 +212,9 @@ fence_gate:0,Oak Fence Gate
 fermented_spider_eye:0,Fermented Spider Eye
 filled_map:0,Map
 fire:0,Fire
-fire_charge:0,Fire Charge
+fireball:0,Fire Charge
 firework_charge:0,Firework Star
 fireworks:0,Firework Rocket
-raw_fish:0,Raw Fish
 fish:1,Raw Salmon
 fish:2,Clownfish
 fish:3,Pufferfish
@@ -217,38 +229,47 @@ frosted_ice:0,Frosted Ice
 furnace:0,Furnace
 furnace_minecart:0,Powered Minecart
 ghast_tear:0,Ghast Tear
-glass:0,Glass
+glass:0,Clear Glass
+glass:-1,Any Glass
 glass_bottle:0,Glass Bottle
 glass_pane:0,Glass Pane
 glowstone:0,Glowstone
 glowstone_dust:0,Glowstone Dust
-gold_block:0,Gold Block
-gold_ingot:0,Gold Ingot
-gold_nugget:0,Gold Nugget
-gold_ore:0,Gold Ore
-golden_apple:0,Golden Apple
-golden_apple:1,Enchanted Golden Apple
 gold_axe:0,Gold Axe
+gold_barding:0,Gold Horse Armor
+gold_block:0,Gold Block
 gold_boots:0,Gold Boots
 gold_carrot:0,Golden Carrot
 gold_chestplate:0,Gold Chestplate
 gold_helmet:0,Gold Helmet
 gold_hoe:0,Gold Hoe
-gold_horse_armor:0,Gold Horse Armor
+gold_ingot:0,Gold Ingot
 gold_leggings:0,Gold Leggings
+gold_nugget:0,Gold Nugget
+gold_ore:0,Gold Ore
 gold_pickaxe:0,Gold Pickaxe
-gold_rail:0,Powered Rail
-gold_shovel:0,Gold Shovel
+gold_plate:0,Weighted Pressure Plate (Light)
+gold_record,Music Disk (13)
+gold_spade:0,Gold Shovel
 gold_sword:0,Gold Sword
+golden_apple:0,Golden Apple
+golden_apple:1,Enchanted Golden Apple
 grass:0,Grass
 grass_path:0,Grass Path
 gravel:0,Gravel
-gunpowder:0,Gunpowder
+green_record,Music Disk (cat)
+grilled_pork:0,Cooked Porkchop
+gunpowder:0,Gunpowder (Sulphur)
 hard_clay:0,Hardened Clay
 hay_block:0,Hay Bale
-heavy_weighted_pressure_plate:0,Weighted Pressure Plate (Heavy)
 hopper:0,Hopper
 hopper_minecart:0,Hopper Minecart
+huge_mushroom_1:0,Brown Mushroom Pore Block
+huge_mushroom_1:10,Brown Mushroom Stem Block
+huge_mushroom_1:14,Brown Mushroom Block
+huge_mushroom_2:0,Red Mushroom Pore Block
+huge_mushroom_2:10,Red Mushroom Stem Block
+huge_mushroom_2:14,Red Mushroom Block
 ice:0,Ice
 ink_sack:0,Ink Sack
 ink_sack:1,Rose Red Dye
@@ -265,22 +286,24 @@ ink_sack:11,Dandelion Yellow Dye
 ink_sack:12,Light Blue Dye
 ink_sack:13,Magenta Dye
 ink_sack:14,Orange Dye
-ink_sack:15,Bone Meal
+ink_sack:15,Bonemeal
 iron_axe:0,Iron Axe
-iron_bars:0,Iron Bars
+iron_barding:0,Iron Horse Armor
 iron_block:0,Iron Block
 iron_boots:0,Iron Boots
 iron_chestplate:0,Iron Chestplate
 iron_door:0,Iron Door
 iron_door:0,Iron Door (Block)
+iron_fence:0,Iron Bars
 iron_helmet:0,Iron Helmet
 iron_hoe:0,Iron Hoe
-iron_horse_armor:0,Iron Horse Armor
 iron_ingot:0,Iron Ingot
 iron_leggings:0,Iron Leggings
+iron_nugget:0,Iron Nugget
 iron_ore:0,Iron Ore
 iron_pickaxe:0,Iron Pickaxe
-iron_shovel:0,Iron Shovel
+iron_plate:0,Weighted Pressure Plate (Heavy)
+iron_spade:0,Iron Shovel
 iron_sword:0,Iron Sword
 iron_trapdoor:0,Iron Trapdoor
 item_frame:0,Item Frame
@@ -308,19 +331,19 @@ leaves:1,Spruce Leaves
 leaves:2,Birch Leaves
 leaves:3,Jungle Leaves
 lever:0,Lever
-light_weighted_pressure_plate:0,Weighted Pressure Plate (Light)
 lit_furnace:0,Furnace (Lit)
 lit_pumpkin:0,Jack-O-Lantern
 lit_redstone_lamp:0,Redstone Lamp (On)
 lit_redstone_ore:0,Redstone Ore (Glowing)
-log2,Acacia Log
+log2:0,Acacia Log
 log2:1,Dark Oak Log
 log:0,Oak Log
 log:1,Spruce Log
 log:2,Birch Log
 log:3,Jungle Log
-log:4,Oak 4 Log
-log:5,Oak 5 Log
+log:4,Acacia Log
+log:5,Dark Oak Log
+log:-1,Any Log
 magma:0,Magma Block
 magma_cream:0,Magma Cream
 map:0,Empty Map
@@ -340,19 +363,19 @@ monster_egg:5,Monster Egg (Chiseled Stone)
 mossy_cobblestone:0,Moss Stone
 mushroom_stew:0,Mushroom Stew
 mutton:0,Raw Mutton
-mycelium:0,Mycelium
 mycel:0,Mycelium
+mycelium:0,Mycelium
 name_tag:0,Name Tag
 nether_brick:0,Nether Brick
 nether_brick_fence:0,Nether Brick Fence
 nether_brick_stairs:0,Nether Brick Stairs
-nether_star:0,Nether Star
 nether_stalk:0,Nether Wart
+nether_star:0,Nether Star (Steel)
 nether_wart:0,Nether Wart Seeds
 nether_wart_block:0,Nether Wart (Block)
 netherbrick:0,Nether Brick (Item)
 netherrack:0,Netherrack
-noteblock:0,Note Block
+note_block:0,Note Block
 oak_stairs:0,Oak Stairs
 observer:0,Observer
 obsidian:0,Obsidian
@@ -360,6 +383,7 @@ packed_ice:0,Packed Ice
 painting:0,Painting
 paper:0,Paper
 piston:0,Piston
+piston_base:0,Piston
 piston_extension:0,Piston (Moving)
 piston_head:0,Piston (Head)
 planks:0,Oak Plank
@@ -371,7 +395,7 @@ planks:5,Dark Oak Plank
 poisonous_potato:0,Poisonous Potato
 porkchop:0,Raw Porkchop
 portal:0,Portal
-potato:0,Potato
+potato_item:0,Potato
 potatoes:0,Potatoes
 potion:0,Water Bottle
 potion:16,Awkward Potion
@@ -446,6 +470,7 @@ potion:16482,Swiftness Splash II (3:00)
 potion:16484,Poison Splash II (0:45)
 potion:16489,Strength Splash II (3:00)
 powered_comparator:0,Redstone Comparator (On)
+powered_rail:0,Powered Rail
 powered_repeater:0,Repeater (Block On)
 prismarine:0,Prismarine
 prismarine:1,Prismarine Bricks
@@ -473,7 +498,19 @@ rabbit_foot:0,Rabbit's Foot
 rabbit_hide:0,Rabbit Hide
 rabbit_stew:0,Rabbit Stew
 rail:0,Rail
+raw_beef:0,Raw Beef
+raw_chicken:0,Raw Chicken
+raw_fish:0,Raw Fish
+record_3,Music Disk (blocks)
+record_4,Music Disk (chirp)
+record_5,Music Disk (far)
+record_6,Music Disk (mall)
+record_7,Music Disk (mellohi)
+record_8,Music Disk (stal)
+record_9,Music Disk (strad)
+record_10,Music Disk (ward)
 record_11,Music Disk (11)
+record_12,Music Disk (wait)
 record_13,Music Disk (13)
 record_blocks:0,Music Disk (Blocks)
 record_cat:0,Music Disk (Cat)
@@ -496,18 +533,20 @@ red_flower:7,Pink Tulip
 red_flower:8,Oxeye Daisy
 red_mushroom:0,Red Mushroom
 red_mushroom_block:0,Red Mushroom (Block)
-huge_mushroom_2:14,Red Mushroom (Block)
 red_nether_brick:0,Red Nether Brick
+red_rose:0,Poppy
 red_sandstone:0,Red Sandstone
 red_sandstone:1,Chiseled Red Sandstone
 red_sandstone:2,Smooth Red Sandstone
 red_sandstone_stairs:0,Red Sandstone Stairs
 redstone:0,Redstone Dust
 redstone_block:0,Redstone Block
+redstone_comparator:0,Comparator
 redstone_lamp:0,Redstone Lamp
 redstone_lamp_off:0,Redstone Lamp
 redstone_ore:0,Redstone Ore
 redstone_torch:0,Redstone Torch
+redstone_torch_on:0,Redstone Torch
 redstone_wire:0,Redstone Wire
 reeds:0,Sugar Cane
 reeds:0,Sugar Cane (Block)
@@ -516,18 +555,20 @@ rotten_flesh:0,Rotten Flesh
 saddle:0,Saddle
 sand:0,Sand
 sand:1,Red Sand
+sand:-1,Any Sand
 sandstone:0,Sandstone
 sandstone:1,Chiseled Sandstone
 sandstone:2,Smooth Sandstone
 sandstone_stairs:0,Sandstone Stairs
-sapling:-1,Any Sapling
 sapling:0,Oak Sapling
 sapling:1,Spruce Sapling
 sapling:2,Birch Sapling
 sapling:3,Jungle Sapling
 sapling:4,Acacia Sapling
 sapling:5,Dark Oak Sapling
+sapling:-1,Any Sapling
 sea_lantern:0,Sea Lantern
+seeds:0,Wheat Seeds
 shears:0,Shears
 shield:0,Shield
 shulker_shell:0,Shulker Shell
@@ -538,8 +579,8 @@ skull:2,Zombie Head
 skull:3,Player Head
 skull:4,Creeper Head
 slime:0,Slime Block
-slimeball:0,Slime Ball
 slime_ball:0,Slime Ball
+slimeball:0,Slime Ball
 smooth_brick:0,Stone Bricks
 smooth_brick:1,Mossy Stone Bricks
 smooth_brick:2,Cracked Stone Bricks
@@ -587,6 +628,22 @@ spruce_door:0,Spruce Door Block
 spruce_fence:0,Fence (Spruce)
 spruce_fence_gate:0,Spruce Fence Gate
 spruce_stairs:0,Spruce Stairs
+stained_clay:0,White Teracotta
+stained_clay:1,Orange Teracotta
+stained_clay:2,Magenta Teracotta
+stained_clay:3,Light Blue Teracotta
+stained_clay:4,Yellow Teracotta
+stained_clay:5,Lime Teracotta
+stained_clay:6,Pink Teracotta
+stained_clay:7,Gray Teracotta
+stained_clay:8,Light Gray Teracotta
+stained_clay:9,Cyan Teracotta
+stained_clay:10,Purple Teracotta
+stained_clay:11,Blue Teracotta
+stained_clay:12,Brown Teracotta
+stained_clay:13,Green Teracotta
+stained_clay:14,Red Teracotta
+stained_clay:15,Black Teracotta
 stained_glass:0,White Stained Glass
 stained_glass:1,Orange Stained Glass
 stained_glass:2,Magenta Stained Glass
@@ -619,22 +676,6 @@ stained_glass_pane:12,Brown Stained Glass Pane
 stained_glass_pane:13,Green Stained Glass Pane
 stained_glass_pane:14,Red Stained Glass Pane
 stained_glass_pane:15,Black Stained Glass Pane
-stained_clay:0,White Teracotta
-stained_clay:1,Orange Teracotta
-stained_clay:2,Magenta Teracotta
-stained_clay:3,Light Blue Teracotta
-stained_clay:4,Yellow Teracotta
-stained_clay:5,Lime Teracotta
-stained_clay:6,Pink Teracotta
-stained_clay:7,Gray Teracotta
-stained_clay:8,Light Gray Teracotta
-stained_clay:9,Cyan Teracotta
-stained_clay:10,Purple Teracotta
-stained_clay:11,Blue Teracotta
-stained_clay:12,Brown Teracotta
-stained_clay:13,Green Teracotta
-stained_clay:14,Red Teracotta
-stained_clay:15,Black Teracotta
 standing_banner:0,Standing Banner (Block)
 standing_sign:0,Sign (Block)
 stick:0,Stick
@@ -652,7 +693,6 @@ stone_button:0,Stone Button
 stone_hoe:0,Stone Hoe
 stone_pickaxe:0,Stone Pickaxe
 stone_pressure_plate:0,Stone Pressure Plate
-stone_shovel:0,Stone Shovel
 stone_slab2,Red Sandstone Slab
 stone_slab:0,Stone Slab
 stone_slab:1,Sandstone Slab
@@ -662,6 +702,7 @@ stone_slab:4,Brick Slab
 stone_slab:5,Stone Brick Slab
 stone_slab:6,Nether Brick Slab
 stone_slab:7,Quartz Slab
+stone_spade:0,Stone Shovel
 stone_stairs:0,Cobblestone Stairs
 stone_sword:0,Stone Sword
 string:0,String
@@ -674,7 +715,7 @@ tnt:0,TNT
 tnt_minecart:0,TNT Minecart
 torch:0,Torch
 totem:0,Totem of Undying
-trapdoor:0,Trapdoor
+trap_door:0,Trapdoor
 trapped_chest:0,Trapped Chest
 tripwire:0,Tripwire
 tripwire_hook:0,Tripwire Hook
@@ -689,20 +730,20 @@ water_bucket:0,Water Bucket
 waterlily:0,Lily Pad
 web:0,Cobweb
 wheat:0,Wheat
-wheat_seeds:0,Wheat Seeds
+wood:-1,Any Plank
 wooden_axe:0,Wooden Axe
 wooden_button:0,Wooden Button
 wooden_door:0,Wooden Door
 wooden_hoe:0,Wooden Hoe
 wooden_pickaxe:0,Wooden Pickaxe
 wooden_pressure_plate:0,Wooden Pressure Plate
-wooden_shovel:0,Wooden Shovel
 wooden_slab:0,Oak Slab
 wooden_slab:1,Spruce Slab
 wooden_slab:2,Birch Slab
 wooden_slab:3,Jungle Slab
 wooden_slab:4,Acacia Slab
 wooden_slab:5,Dark Oak Slab
+wooden_spade:0,Wooden Shovel
 wooden_sword:0,Wooden Sword
 wool:0,Wool
 wool:1,Orange Wool
@@ -720,6 +761,6 @@ wool:12,Brown Wool
 wool:13,Green Wool
 wool:14,Red Wool
 wool:15,Black Wool
-writable_book:0,Book and Quill
+wool:-1,Any Wool
 written_book:0,Written Book
 yellow_flower:0,Dandelion
