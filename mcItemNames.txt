@@ -1,1 +1,725 @@
-air:0,Airstone:0,Stonestone:1,Granitestone:2,Polished Granitestone:3,Dioritestone:4,Polished Dioritestone:5,Andesitestone:6,Polished Andesitegrass:0,Grassdirt:0,Dirtdirt:1,Coarse Dirtdirt:2,Podzolcobblestone:0,Cobblestoneplanks:0,Wooden Plank (Oak)planks:1,Wooden Plank (Spruce)planks:2,Wooden Plank (Birch)planks:3,Wooden Plank (Jungle)planks:4,Wooden Plank (Acacia)planks:5,Wooden Plank (Dark Oak)sapling:0,Sapling (Oak)sapling:1,Sapling (Spruce)sapling:2,Sapling (Birch)sapling:3,Sapling (Jungle)sapling:4,Sapling (Acacia)sapling:5,Sapling (Dark Oak)bedrock:0,Bedrockflowing_water:0,Waterwater:0,Water (No Spread)flowing_lava:0,Lavalava:0,Lava (No Spread)sand:0,Sandsand:1,Red Sandgravel:0,Gravelgold_ore:0,Gold Oreiron_ore:0,Iron Orecoal_ore:0,Coal Orelog:0,Wood (Oak)log:1,Wood (Spruce)log:2,Wood (Birch)log:3,Wood (Jungle)log:4,Wood (Oak 4)log:5,Wood (Oak 5)leaves:0,Leaves (Oak)leaves:1,Leaves (Spruce)leaves:2,Leaves (Birch)leaves:3,Leaves (Jungle)sponge:0,Spongesponge:1,Wet Spongeglass:0,Glasslapis_ore:0,Lapis Lazuli Orelapis_block:0,Lapis Lazuli Blockdispenser:0,Dispensersandstone:0,Sandstonesandstone:1,Sandstone (Chiseled)sandstone:2,Sandstone (Smooth)noteblock:0,Note Blockbed:0,Bed (Block)golden_rail:0,Rail (Powered)detector_rail:0,Rail (Detector)sticky_piston:0,Sticky Pistonweb:0,Cobwebtallgrass:0,Tall Grass (Dead Shrub)tallgrass:1,Tall Grasstallgrass:2,Tall Grass (Fern)deadbush:0,Dead Shrubpiston:0,Pistonpiston_head:0,Piston (Head)wool:0,Woolwool:1,Orange Woolwool:2,Magenta Woolwool:3,Light Blue Woolwool:4,Yellow Woolwool:5,Lime Woolwool:6,Pink Woolwool:7,Gray Woolwool:8,Light Gray Woolwool:9,Cyan Woolwool:10,Purple Woolwool:11,Blue Woolwool:12,Brown Woolwool:13,Green Woolwool:14,Red Woolwool:15,Black Woolpiston_extension:0,Piston (Moving)yellow_flower:0,Dandelionred_flower:0,Poppyred_flower:1,Blue Orchidred_flower:2,Alliumred_flower:3,Azure Bluetred_flower:4,Red Tulipred_flower:5,Orange Tulipred_flower:6,White Tulipred_flower:7,Pink Tulipred_flower:8,Oxeye Daisybrown_mushroom:0,Brown Mushroomred_mushroom:0,Red Mushroomgold_block:0,Block of Goldiron_block:0,Block of Irondouble_stone_slab:0,Stone Slab (Double)double_stone_slab:1,Sandstone Slab (Double)double_stone_slab:2,Wooden Slab (Double)double_stone_slab:3,Cobblestone Slab (Double)double_stone_slab:4,Brick Slab (Double)double_stone_slab:5,Stone Brick Slab (Double)double_stone_slab:6,Nether Brick Slab (Double)double_stone_slab:7,Quartz Slab (Double)double_stone_slab:8,Smooth Stone Slab (Double)double_stone_slab:9,Smooth Sandstone Slab (Double)stone_slab:0,Stone Slabstone_slab:1,Sandstone Slabstone_slab:2,Wooden Slabstone_slab:3,Cobblestone Slabstone_slab:4,Brick Slabstone_slab:5,Stone Brick Slabstone_slab:6,Nether Brick Slabstone_slab:7,Quartz Slabbrick_block:0,Bricktnt:0,TNTbookshelf:0,Bookshelfmossy_cobblestone:0,Moss Stoneobsidian:0,Obsidiantorch:0,Torchfire:0,Firemob_spawner:0,Mob Spawneroak_stairs:0,Wooden Stairs (Oak)chest:0,Chestredstone_wire:0,Redstone Wirediamond_ore:0,Diamond Orediamond_block:0,Block of Diamondcrafting_table:0,Workbenchwheat:0,Wheat (Crop)farmland:0,Farmlandfurnace:0,Furnacelit_furnace:0,Furnace (Smelting)standing_sign:0,Sign (Block)wooden_door:0,Wood Door (Block)ladder:0,Ladderrail:0,Railstone_stairs:0,Cobblestone Stairswall_sign:0,Sign (Wall Block)lever:0,Leverstone_pressure_plate:0,Stone Pressure Plateiron_door:0,Iron Door (Block)wooden_pressure_plate:0,Wooden Pressure Plateredstone_ore:0,Redstone Orelit_redstone_ore:0,Redstone Ore (Glowing)unlit_redstone_torch:0,Redstone Torch (Off)redstone_torch:0,Redstone Torchstone_button:0,Button (Stone)snow_layer:0,Snowice:0,Icesnow:0,Snow Blockcactus:0,Cactusclay:0,Clay Blockreeds:0,Sugar Cane (Block)jukebox:0,Jukeboxfence:0,Fence (Oak)pumpkin:0,Pumpkinnetherrack:0,Netherracksoul_sand:0,Soul Sandglowstone:0,Glowstoneportal:0,Portallit_pumpkin:0,Jack-O-Lanterncake:0,Cake (Block)unpowered_repeater:0,Redstone Repeater (Block Off)powered_repeater:0,Redstone Repeater (Block On)stained_glass:0,Stained Glass (White)stained_glass:1,Stained Glass (Orange)stained_glass:2,Stained Glass (Magenta)stained_glass:3,Stained Glass (Light Blue)stained_glass:4,Stained Glass (Yellow)stained_glass:5,Stained Glass (Lime)stained_glass:6,Stained Glass (Pink)stained_glass:7,Stained Glass (Gray)stained_glass:8,Stained Glass (Light Grey)stained_glass:9,Stained Glass (Cyan)stained_glass:10,Stained Glass (Purple)stained_glass:11,Stained Glass (Blue)stained_glass:12,Stained Glass (Brown)stained_glass:13,Stained Glass (Green)stained_glass:14,Stained Glass (Red)stained_glass:15,Stained Glass (Black)trapdoor:0,Trapdoormonster_egg:0,Monster Egg (Stone)monster_egg:1,Monster Egg (Cobblestone)monster_egg:2,Monster Egg (Stone Brick)monster_egg:3,Monster Egg (Mossy Stone Brick)monster_egg:4,Monster Egg (Cracked Stone)monster_egg:5,Monster Egg (Chiseled Stone)stonebrick:0,Stone Bricksstonebrick:1,Mossy Stone Bricksstonebrick:2,Cracked Stone Bricksstonebrick:3,Chiseled Stone Brickbrown_mushroom_block:0,Brown Mushroom (Block)red_mushroom_block:0,Red Mushroom (Block)iron_bars:0,Iron Barsglass_pane:0,Glass Panemelon_block:0,Melon (Block)pumpkin_stem:0,Pumpkin Vinemelon_stem:0,Melon Vinevine:0,Vinesfence_gate:0,Fence Gate (Oak)brick_stairs:0,Brick Stairsstone_brick_stairs:0,Stone Brick Stairsmycelium:0,Myceliumwaterlily:0,Lily Padnether_brick:0,Nether Bricknether_brick_fence:0,Nether Brick Fencenether_brick_stairs:0,Nether Brick Stairsnether_wart:0,Nether Wartenchanting_table:0,Enchantment Tablebrewing_stand:0,Brewing Stand (Block)cauldron:0,Cauldron (Block)end_portal:0,End Portalend_portal_frame:0,End Portal Frameend_stone:0,End Stonedragon_egg:0,Dragon Eggredstone_lamp:0,Redstone Lamplit_redstone_lamp:0,Redstone Lamp (On)double_wooden_slab:0,Oak-Wood Slab (Double)double_wooden_slab:1,Spruce-Wood Slab (Double)double_wooden_slab:2,Birch-Wood Slab (Double)double_wooden_slab:3,Jungle-Wood Slab (Double)double_wooden_slab:4,Acacia Wood Slab (Double)double_wooden_slab:5,Dark Oak Wood Slab (Double)wooden_slab:0,Oak-Wood Slabwooden_slab:1,Spruce-Wood Slabwooden_slab:2,Birch-Wood Slabwooden_slab:3,Jungle-Wood Slabwooden_slab:4,Acacia Wood Slabwooden_slab:5,Dark Oak Wood Slabcocoa:0,Cocoa Plantsandstone_stairs:0,Sandstone Stairsemerald_ore:0,Emerald Oreender_chest:0,Ender Chesttripwire_hook:0,Tripwire Hooktripwire:0,Tripwireemerald_block:0,Block of Emeraldspruce_stairs:0,Wooden Stairs (Spruce)birch_stairs:0,Wooden Stairs (Birch)jungle_stairs:0,Wooden Stairs (Jungle)command_block:0,Command Blockbeacon:0,Beaconcobblestone_wall:0,Cobblestone Wallcobblestone_wall:1,Mossy Cobblestone Wallflower_pot:0,Flower Pot (Block)carrots:0,Carrot (Crop)potatoes:0,Potatoes (Crop)wooden_button:0,Button (Wood)skull:0,Head Block (Skeleton)skull:1,Head Block (Wither)skull:2,Head Block (Zombie)skull:3,Head Block (Steve)skull:4,Head Block (Creeper)anvil:0,Anvilanvil:1,Anvil (Slightly Damaged)anvil:2,Anvil (Very Damaged)trapped_chest:0,Trapped Chestlight_weighted_pressure_plate:0,Weighted Pressure Plate (Light)heavy_weighted_pressure_plate:0,Weighted Pressure Plate (Heavy)unpowered_comparator:0,Redstone Comparator (Off)powered_comparator:0,Redstone Comparator (On)daylight_detector:0,Daylight Sensorredstone_block:0,Block of Redstonequartz_ore:0,Nether Quartz Orehopper:0,Hopperquartz_block:0,Quartz Blockquartz_block:1,Chiseled Quartz Blockquartz_block:2,Pillar Quartz Blockquartz_stairs:0,Quartz Stairsactivator_rail:0,Rail (Activator)dropper:0,Dropperstained_hardened_clay:0,Stained Clay (White)stained_hardened_clay:1,Stained Clay (Orange)stained_hardened_clay:2,Stained Clay (Magenta)stained_hardened_clay:3,Stained Clay (Light Blue)stained_hardened_clay:4,Stained Clay (Yellow)stained_hardened_clay:5,Stained Clay (Lime)stained_hardened_clay:6,Stained Clay (Pink)stained_hardened_clay:7,Stained Clay (Gray)stained_hardened_clay:8,Stained Clay (Light Gray)stained_hardened_clay:9,Stained Clay (Cyan)stained_hardened_clay:10,Stained Clay (Purple)stained_hardened_clay:11,Stained Clay (Blue)stained_hardened_clay:12,Stained Clay (Brown)stained_hardened_clay:13,Stained Clay (Green)stained_hardened_clay:14,Stained Clay (Red)stained_hardened_clay:15,Stained Clay (Black)stained_glass_pane:0,Stained Glass Pane (White)stained_glass_pane:1,Stained Glass Pane (Orange)stained_glass_pane:2,Stained Glass Pane (Magenta)stained_glass_pane:3,Stained Glass Pane (Light Blue)stained_glass_pane:4,Stained Glass Pane (Yellow)stained_glass_pane:5,Stained Glass Pane (Lime)stained_glass_pane:6,Stained Glass Pane (Pink)stained_glass_pane:7,Stained Glass Pane (Gray)stained_glass_pane:8,Stained Glass Pane (Light Gray)stained_glass_pane:9,Stained Glass Pane (Cyan)stained_glass_pane:10,Stained Glass Pane (Purple)stained_glass_pane:11,Stained Glass Pane (Blue)stained_glass_pane:12,Stained Glass Pane (Brown)stained_glass_pane:13,Stained Glass Pane (Green)stained_glass_pane:14,Stained Glass Pane (Red)stained_glass_pane:15,Stained Glass Pane (Black)leaves2,Leaves (Acacia)leaves2:1,Leaves (Dark Oak)log2,Wood (Acacia Oak)log2:1,Wood (Dark Oak)acacia_stairs:0,Wooden Stairs (Acacia)dark_oak_stairs:0,Wooden Stairs (Dark Oak)slime:0,Slime Blockbarrier:0,Barrieriron_trapdoor:0,Iron Trapdoorprismarine:0,Prismarineprismarine:1,Prismarine Bricksprismarine:2,Dark Prismarinesea_lantern:0,Sea Lanternhay_block:0,Hay Balecarpet:0,Carpet (White)carpet:1,Carpet (Orange)carpet:2,Carpet (Magenta)carpet:3,Carpet (Light Blue)carpet:4,Carpet (Yellow)carpet:5,Carpet (Lime)carpet:6,Carpet (Pink)carpet:7,Carpet (Grey)carpet:8,Carpet (Light Gray)carpet:9,Carpet (Cyan)carpet:10,Carpet (Purple)carpet:11,Carpet (Blue)carpet:12,Carpet (Brown)carpet:13,Carpet (Green)carpet:14,Carpet (Red)carpet:15,Carpet (Black)hardened_clay:0,Hardened Claycoal_block:0,Block of Coalpacked_ice:0,Packed Icedouble_plant:0,Sunflowerdouble_plant:1,Lilacdouble_plant:2,Double Tallgrassdouble_plant:3,Large Ferndouble_plant:4,Rose Bushdouble_plant:5,Peonystanding_banner:0,Standing Banner (Block)wall_banner:0,Wall Banner (Block)daylight_detector_inverted:0,Inverted Daylight Sensorred_sandstone:0,Red Sandstonered_sandstone:1,Red Sandstone (Chiseled)red_sandstone:2,Red Sandstone (Smooth)red_sandstone_stairs:0,Red Sandstone Stairsdouble_stone_slab2,Red Sandstone Slab (Double)stone_slab2,Red Sandstone Slabspruce_fence_gate:0,Fence Gate (Spruce)birch_fence_gate:0,Fence Gate (Birch)jungle_fence_gate:0,Fence Gate (Jungle)dark_oak_fence_gate:0,Fence Gate (Dark Oak)acacia_fence_gate:0,Fence Gate (Acacia)spruce_fence:0,Fence (Spruce)birch_fence:0,Fence (Birch)jungle_fence:0,Fence (Jungle)dark_oak_fence:0,Fence (Dark Oak)acacia_fence:0,Fence (Acacia)spruce_door:0,Wooden Door Block (Spruce)birch_door:0,Wooden Door Block (Birch)jungle_door:0,Wooden Door Block (Jungle)acacia_door:0,Wooden Door Block (Acacia)dark_oak_door:0,Wooden Door Block (Dark Oak)end_rod:0,End rodchorus_plant:0,Chorus Plantchorus_flower:0,Chorus Flowerpurpur_block:0,Purpur Blockpurpur_pillar:0,Purpur Pillarpurpur_stairs:0,Purpur Stairspurpur_double_slab:0,Purpur Slab (Double)purpur_slab:0,Purpur Slabend_bricks:0,End Stone Bricksgrass_path:0,Grass Pathend_gateway:0,End Gatewayfrosted_ice:0,Frosted Icemagma:0,Magma Blocknether_wart_block:0,Nether Wart (Block)red_nether_brick:0,Nether Brick (Red)bone_block:0,Bone Blockobserver:0,Observerpurple_shulker_box:0,Shulker Box (Purple)structure_block:0,Structure Blockiron_shovel:0,Iron Shoveliron_pickaxe:0,Iron Pickaxeiron_axe:0,Iron Axeflint_and_steel:0,Flint and Steelapple:0,Applebow:0,Bowarrow:0,Arrowcoal:0,Coalcoal:1,Charcoaldiamond:0,Diamond Gemiron_ingot:0,Iron Ingotgold_ingot:0,Gold Ingotiron_sword:0,Iron Swordwooden_sword:0,Wooden Swordwooden_shovel:0,Wooden Shovelwooden_pickaxe:0,Wooden Pickaxewooden_axe:0,Wooden Axestone_sword:0,Stone Swordstone_shovel:0,Stone Shovelstone_pickaxe:0,Stone Pickaxestone_axe:0,Stone Axediamond_sword:0,Diamond Sworddiamond_shovel:0,Diamond Shoveldiamond_pickaxe:0,Diamond Pickaxediamond_axe:0,Diamond Axestick:0,Stickbowl:0,Bowlmushroom_stew:0,Mushroom Stewgolden_sword:0,Gold Swordgolden_shovel:0,Gold Shovelgolden_pickaxe:0,Gold Pickaxegolden_axe:0,Gold Axestring:0,Stringfeather:0,Feathergunpowder:0,Gunpowderwooden_hoe:0,Wooden Hoestone_hoe:0,Stone Hoeiron_hoe:0,Iron Hoediamond_hoe:0,Diamond Hoegolden_hoe:0,Gold Hoewheat_seeds:0,Wheat Seedswheat:0,Wheatbread:0,Breadleather_helmet:0,Leather Helmetleather_chestplate:0,Leather Chestplateleather_leggings:0,Leather Leggingsleather_boots:0,Leather Bootschainmail_helmet:0,Chainmail Helmetchainmail_chestplate:0,Chainmail Chestplatechainmail_leggings:0,Chainmail Leggingschainmail_boots:0,Chainmail Bootsiron_helmet:0,Iron Helmetiron_chestplate:0,Iron Chestplateiron_leggings:0,Iron Leggingsiron_boots:0,Iron Bootsdiamond_helmet:0,Diamond Helmetdiamond_chestplate:0,Diamond Chestplatediamond_leggings:0,Diamond Leggingsdiamond_boots:0,Diamond Bootsgolden_helmet:0,Gold Helmetgolden_chestplate:0,Gold Chestplategolden_leggings:0,Gold Leggingsgolden_boots:0,Gold Bootsflint:0,Flintporkchop:0,Raw Porkchopcooked_porkchop:0,Cooked Porkchoppainting:0,Paintinggolden_apple:0,Golden Applegolden_apple:1,Enchanted Golden Applesign:0,Signwooden_door:0,Wooden Doorbucket:0,Bucketwater_bucket:0,Bucket (Water)lava_bucket:0,Bucket (Lava)minecart:0,Minecartsaddle:0,Saddleiron_door:0,Iron Doorredstone:0,Redstone Dustsnowball:0,Snowballboat:0,Boatleather:0,Leathermilk_bucket:0,Bucket (Milk)brick:0,Clay Brickclay_ball:0,Clayreeds:0,Sugar Canepaper:0,Paperbook:0,Bookslimeball:0,Slime Ballchest_minecart:0,Minecart (Storage)furnace_minecart:0,Minecart (Powered)egg:0,Eggcompass:0,Compassfishing_rod:0,Fishing Rodclock:0,Watchglowstone_dust:0,Glowstone Dustfish:0,Raw Fishfish:1,Raw Salmonfish:2,Clownfishfish:3,Pufferfishcooked_fished:0,Cooked Fishcooked_fished:1,Cooked Salmoncooked_fished:2,Clownfishcooked_fished:3,Pufferfishdye:0,Ink Sackdye:1,Rose Red Dyedye:2,Cactus Green Dyedye:3,Cocoa Beandye:4,Lapis Lazulidye:5,Purple Dyedye:6,Cyan Dyedye:7,Light Gray Dyedye:8,Gray Dyedye:9,Pink Dyedye:10,Lime Dyedye:11,Dandelion Yellow Dyedye:12,Light Blue Dyedye:13,Magenta Dyedye:14,Orange Dyedye:15,Bone Mealbone:0,Bonesugar:0,Sugarcake:0,Cakebed:0,Bedrepeater:0,Redstone Repeatercookie:0,Cookiefilled_map:0,Mapshears:0,Shearsmelon:0,Melon (Slice)pumpkin_seeds:0,Pumpkin Seedsmelon_seeds:0,Melon Seedsbeef:0,Raw Beefcooked_beef:0,Steakchicken:0,Raw Chickencooked_chicken:0,Cooked Chickenrotten_flesh:0,Rotten Fleshender_pearl:0,Ender Pearlblaze_rod:0,Blaze Rodghast_tear:0,Ghast Teargold_nugget:0,Gold Nuggetnether_wart:0,Nether Wart Seedspotion:0,Water Bottlepotion:16,Awkward Potionpotion:32,Thick Potionpotion:64,Mundane Potionpotion:8193,Regeneration Potion (0:45)potion:8194,Swiftness Potion (3:00)potion:8195,Fire Resistance Potion (3:00)potion:8196,Poison Potion (0:45)potion:8197,Healing Potionpotion:8198,Night Vision Potion (3:00)potion:8200,Weakness Potion (1:30)potion:8201,Strength Potion (3:00)potion:8202,Slowness Potion (1:30)potion:8204,Harming Potionpotion:8205,Water Breathing Potion (3:00)potion:8206,Invisibility Potion (3:00)potion:8225,Regeneration Potion II (0:22)potion:8226,Swiftness Potion II (1:30)potion:8228,Poison Potion II (0:22)potion:8229,Healing Potion IIpotion:8233,Strength Potion II (1:30)potion:8235,Leaping Potion II (1:30)potion:8236,Harming Potion IIpotion:8257,Regeneration Potion (2:00)potion:8258,Swiftness Potion (8:00)potion:8259,Fire Resistance Potion (8:00)potion:8260,Poison Potion (2:00)potion:8262,Night Vision Potion (8:00)potion:8264,Weakness Potion (4:00)potion:8265,Strength Potion (8:00)potion:8266,Slowness Potion (4:00)potion:8267,Leaping Potion (3:00)potion:8269,Water Breathing Potion (8:00)potion:8270,Invisibility Potion (8:00)potion:8289,Regeneration Potion II (1:00)potion:8290,Swiftness Potion II (4:00)potion:8292,Poison Potion II (1:00)potion:8297,Strength Potion II (4:00)potion:16385,Regeneration Splash (0:33)potion:16386,Swiftness Splash (2:15)potion:16387,Fire Resistance Splash (2:15)potion:16388,Poison Splash (0:33)potion:16389,Healing Splashpotion:16390,Night Vision Splash (2:15)potion:16392,Weakness Splash (1:07)potion:16393,Strength Splash (2:15)potion:16394,Slowness Splash (1:07)potion:16396,Harming Splashpotion:16397,Breathing Splash (2:15)potion:16398,Invisibility Splash (2:15)potion:16417,Regeneration Splash II (0:16)potion:16418,Swiftness Splash II (1:07)potion:16420,Poison Splash II (0:16)potion:16421,Healing Splash IIpotion:16425,Strength Splash II (1:07)potion:16427,Leaping Splash II (1:07)potion:16428,Harming Splash IIpotion:16449,Regeneration Splash (1:30)potion:16450,Swiftness Splash (6:00)potion:16451,Fire Resistance Splash (6:00)potion:16452,Poison Splash (1:30)potion:16454,Night Vision Splash (6:00)potion:16456,Weakness Splash (3:00)potion:16457,Strength Splash (6:00)potion:16458,Slowness Splash (3:00)potion:16459,Leaping Splash (2:15)potion:16461,Breathing Splash (6:00)potion:16462,Invisibility Splash (6:00)potion:16481,Regeneration Splash II (0:45)potion:16482,Swiftness Splash II (3:00)potion:16484,Poison Splash II (0:45)potion:16489,Strength Splash II (3:00)glass_bottle:0,Glass Bottlespider_eye:0,Spider Eyefermented_spider_eye:0,Fermented Spider Eyeblaze_powder:0,Blaze Powdermagma_cream:0,Magma Creambrewing_stand:0,Brewing Standcauldron:0,Cauldronender_eye:0,Eye of Enderspeckled_melon:0,Glistering Melon (Slice)spawn_egg:50,Spawn Egg (Creeper)spawn_egg:51,Spawn Egg (Skeleton)spawn_egg:52,Spawn Egg (Spider)spawn_egg:54,Spawn Egg (Zombie)spawn_egg:55,Spawn Egg (Slime)spawn_egg:56,Spawn Egg (Ghast)spawn_egg:57,Spawn Egg (Zombie Pigmen)spawn_egg:58,Spawn Egg (Endermen)spawn_egg:59,Spawn Egg (Cave Spider)spawn_egg:60,Spawn Egg (Silverfish)spawn_egg:61,Spawn Egg (Blaze)spawn_egg:62,Spawn Egg (Magma Cube)spawn_egg:65,Spawn Egg (Bat)spawn_egg:66,Spawn Egg (Witch)spawn_egg:67,Spawn Egg (Endermite)spawn_egg:68,Spawn Egg (Guardian)spawn_egg:69,Spawn Egg (Shulker)spawn_egg:90,Spawn Egg (Pig)spawn_egg:91,Spawn Egg (Sheep)spawn_egg:92,Spawn Egg (Cow)spawn_egg:93,Spawn Egg (Chicken)spawn_egg:94,Spawn Egg (Squid)spawn_egg:95,Spawn Egg (Wolf)spawn_egg:96,Spawn Egg (Mooshroom)spawn_egg:98,Spawn Egg (Ocelot)spawn_egg:100,Spawn Egg (Horse)spawn_egg:101,Spawn Egg (Rabbit)spawn_egg:102,Spawn Egg (Polar Bear)spawn_egg:120,Spawn Egg (Villager)experience_bottle:0,Bottle of Enchantingfire_charge:0,Fire Chargewritable_book:0,Book and Quillwritten_book:0,Written Bookemerald:0,Emeralditem_frame:0,Item Frameflower_pot:0,Flower Potcarrot:0,Carrotpotato:0,Potatobaked_potato:0,Baked Potatopoisonous_potato:0,Poisonous Potatomap:0,Empty Mapgolden_carrot:0,Golden Carrotskull:0,Head (Skeleton)skull:1,Head (Wither)skull:2,Head (Zombie)skull:3,Head (Steve)skull:4,Head (Creeper)carrot_on_a_stick:0,Carrot on a Sticknether_star:0,Nether Starpumpkin_pie:0,Pumpkin Piefireworks:0,Firework Rocketfirework_charge:0,Firework Starenchanted_book:0,Enchanted Bookcomparator:0,Redstone Comparatornetherbrick:0,Nether Brick (Item)quartz:0,Nether Quartztnt_minecart:0,Minecart (TNT)hopper_minecart:0,Minecart (Hopper)prismarine_shard:0,Prismarine Shardprismarine_crystals:0,Prismarine Crystalsrabbit:0,Raw Rabbitcooked_rabbit:0,Cooked Rabbitrabbit_stew:0,Rabbit Stewrabbit_foot:0,Rabbit's Footrabbit_hide:0,Rabbit Hidearmor_stand:0,Armor Standiron_horse_armor:0,Iron Horse Armorgolden_horse_armor:0,Gold Horse Armordiamond_horse_armor:0,Diamond Horse Armorlead:0,Leadname_tag:0,Name Tagcommand_block_minecart:0,Minecart (Command Block)mutton:0,Raw Muttoncooked_mutton:0,Cooked Muttonbanner:0,Banner (Black)banner:1,Banner (Red)banner:2,Banner (Green)banner:3,Banner (Brown)banner:4,Banner (Blue)banner:5,Banner (Purple)banner:6,Banner (Cyan)banner:7,Banner (Light Gray)banner:8,Banner (Gray)banner:9,Banner (Pink)banner:10,Banner (Lime)banner:11,Banner (Yellow)banner:12,Banner (Light Blue)banner:13,Banner (Magenta)banner:14,Banner (Orange)banner:15,Banner (White)end_crystal:0,End Crystalspruce_door:0,Wooden Door (Spruce)birch_door:0,Wooden Door (Birch)jungle_door:0,Wooden Door (Jungle)acacia_door:0,Wooden Door (Acacia)dark_oak_door:0,Wooden Door (Dark Oak)chorus_fruit:0,Chorus Fruitchorus_fruit_popped:0,Chorus Fruit (Popped)beetroot:0,Beetrootbeetroot_seeds:0,Beetroot Seedsbeetroot_soup:0,Beetroot Soupdragon_breath:0,Dragon's Breathspectral_arrow:0,Arrow (Spectral)shield:0,Shieldelytra:0,Elytratotem:0,Totem of Undyingshulker_shell:0,Shulker Shellrecord_13,Music Disk (13)record_cat:0,Music Disk (Cat)record_blocks:0,Music Disk (Blocks)record_chirp:0,Music Disk (Chirp)record_far:0,Music Disk (Far)record_mall:0,Music Disk (Mall)record_mellohi:0,Music Disk (Mellohi)record_stal:0,Music Disk (Stal)record_strad:0,Music Disk (Strad)record_ward:0,Music Disk (Ward)record_11,Music Disk (11)record_wait:0,Music Disk (Wait)
+acacia_door:0,Acacia Door 
+acacia_door:0,Acacia Wooden Door Block
+acacia_fence:0,Acacia Fence
+acacia_fence_gate:0,Acacia Fence Gate
+acacia_stairs:0,Acacia Wooden Stairs
+activator_rail:0,Activator Rail
+air:0,Air
+anvil:0,Anvil
+anvil:1,Slightly Damaged Anvil
+anvil:2,Very Damaged Anvil
+apple:0,Apple
+armor_stand:0,Armor Stand
+arrow:0,Arrow
+baked_potato:0,Baked Potato
+banner:0,Black Banner
+banner:1,Red Banner
+banner:2,Green Banner
+banner:3,Brown Banner
+banner:4,Blue Banner
+banner:5,Purple Banner
+banner:6,Cyan Banner
+banner:7,Light Gray Banner
+banner:8,Gray Banner
+banner:9,Pink Banner
+banner:10,Lime Banner
+banner:11,Yellow Banner
+banner:12,Light Blue Banner
+banner:13,Magenta Banner
+banner:14,Orange Banner
+banner:15,White Banner
+barrier:0,
+beacon:0,Beacon
+bed:0,Bed
+bed:0,Bed (Block)
+bedrock:0,Bedrock
+beef:0,Raw Beef
+beetroot:0,Beetroot
+beetroot_seeds:0,Beetroot Seeds
+beetroot_soup:0,Beetroot Soup
+birch_door:0,Birch Door
+birch_door:0,Birch Door Block
+birch_fence:0,Birch Fence
+birch_fence_gate:0,Birch Fence Gate
+birch_stairs:0,Birch Stairs
+blaze_powder:0,Blaze Powder
+blaze_rod:0,Blaze Rod
+boat:0,Boat
+bone:0,Bone
+bone_block:0,Bone Block
+book:0,Book
+bookshelf:0,Bookshelf
+bow:0,Bow
+bowl:0,Bowl
+bread:0,Bread
+brewing_stand:0,Brewing Stand
+brewing_stand:0,Brewing Stand (Block)
+brick:0,Clay Brick
+brick_block:0,Brick
+brick_stairs:0,Brick Stairs
+brown_mushroom:0,Brown Mushroom
+brown_mushroom_block:0,Brown Mushroom (Block)
+huge_mushroom_1:14,Brown Mushroom (Block)
+bucket:0,Empty Bucket
+cactus:0,Cactus
+cake:0,Cake
+cake:0,Cake (Block)
+carpet:0,White Carpet
+carpet:1,Orange Carpet
+carpet:2,Magenta Carpet
+carpet:3,Light Blue Carpet
+carpet:4,Yellow Carpet
+carpet:5,Lime Carpet
+carpet:6,Pink Carpet
+carpet:7,Grey Carpet
+carpet:8,Light Gray Carpet
+carpet:9,Cyan Carpet
+carpet:10,Purple Carpet
+carpet:11,Blue Carpet
+carpet:12,Brown Carpet
+carpet:13,Green Carpet
+carpet:14,Red Carpet
+carpet:15,Black Carpet
+carrot:0,Carrot
+carrot_on_a_stick:0,Carrot on a Stick
+carrots:0,Carrot
+cauldron:0,Cauldron
+cauldron:0,Cauldron (Block)
+chainmail_boots:0,Chainmail Boots
+chainmail_chestplate:0,Chainmail Chestplate
+chainmail_helmet:0,Chainmail Helmet
+chainmail_leggings:0,Chainmail Leggings
+chest:0,Chest
+chest_minecart:0,Storage Minecart
+chicken:0,Raw Chicken
+chorus_flower:0,Chorus Flower
+chorus_fruit:0,Chorus Fruit
+chorus_fruit_popped:0,Popped Chorus Fruit
+chorus_plant:0,Chorus Plant
+clay:0,Clay Block
+clay_ball:0,Clay
+clock:0,Watch
+coal:0,Coal
+coal:1,Charcoal
+coal_block:0,Coal Block
+coal_ore:0,Coal Ore
+cobblestone:0,Cobblestone
+cobblestone_wall:0,Cobblestone Wall
+cobblestone_wall:1,Mossy Cobblestone Wall
+cocoa:0,Cocoa Plant
+command_block:0,Command Block
+command_block_minecart:0,Command Block Minecart
+comparator:0,Comparator
+compass:0,Compass
+cooked_beef:0,Steak
+cooked_chicken:0,Cooked Chicken
+cooked_fished:0,Cooked Fish
+cooked_fished:1,Cooked Salmon
+cooked_fished:2,Clownfish
+cooked_fished:3,Pufferfish
+cooked_mutton:0,Cooked Mutton
+cooked_porkchop:0,Cooked Porkchop
+cooked_rabbit:0,Cooked Rabbit
+cookie:0,Cookie
+crafting_table:0,Workbench
+dark_oak_door:0,Dark Oak Door
+dark_oak_door:0,Dark Oak Door Block
+dark_oak_fence:0,Dark Oak Fence
+dark_oak_fence_gate:0,Dark Oak Fence Gate
+dark_oak_stairs:0,Dark Oak Stairs
+daylight_detector:0,Daylight Sensor
+daylight_detector_inverted:0,Inverted Daylight Sensor
+deadbush:0,Dead Shrub
+detector_rail:0,Detector Rail
+diamond:0,Diamond
+diamond_axe:0,Diamond Axe
+diamond_block:0,Diamond Block
+diamond_boots:0,Diamond Boots
+diamond_chestplate:0,Diamond Chestplate
+diamond_helmet:0,Diamond Helmet
+diamond_hoe:0,Diamond Hoe
+diamond_horse_armor:0,Diamond Horse Armor
+diamond_leggings:0,Diamond Leggings
+diamond_ore:0,Diamond Ore
+diamond_pickaxe:0,Diamond Pickaxe
+diamond_shovel:0,Diamond Shovel
+diamond_sword:0,Diamond Sword
+dirt:0,Dirt
+dirt:1,Coarse Dirt
+dirt:2,Podzol
+dispenser:0,Dispenser
+double_plant:0,Sunflower
+double_plant:1,Lilac
+double_plant:2,Double Tallgrass
+double_plant:3,Large Fern
+double_plant:4,Rose Bush
+double_plant:5,Peony
+double_stone_slab2,Double Red Sandstone Slab
+double_stone_slab:0,Double Stone Slab
+double_stone_slab:1,Double Sandstone Slab
+double_stone_slab:2,Double Wooden Slab
+double_stone_slab:3,Double Cobblestone Slab
+double_stone_slab:4,Double Brick Slab
+double_stone_slab:5,Double Stone Brick Slab
+double_stone_slab:6,Double Nether Brick Slab
+double_stone_slab:7,Double Quartz Slab
+double_stone_slab:8,Double Smooth Stone Slab
+double_stone_slab:9,Double Smooth Sandstone Slab
+double_wooden_slab:0,Double Oak-Wood Slab
+double_wooden_slab:1,Double Spruce-Wood Slab
+double_wooden_slab:2,Double Birch-Wood Slab
+double_wooden_slab:3,Double Jungle-Wood Slab
+double_wooden_slab:4,Double Acacia Wood Slab
+double_wooden_slab:5,Double Dark Oak Wood Slab
+dragon_breath:0,Dragon's Breath
+dragon_egg:0,Dragon Egg
+dropper:0,Dropper
+egg:0,Egg
+elytra:0,Elytra
+emerald:0,Emerald
+emerald_block:0,Emerald Block
+emerald_ore:0,Emerald Ore
+enchanted_book:0,Enchanted Book
+enchanting_table:0,Enchantment Table
+end_bricks:0,End Stone Bricks
+end_crystal:0,End Crystal
+end_gateway:0,End Gateway
+end_portal:0,End Portal
+end_portal_frame:0,End Portal Frame
+end_rod:0,End rod
+end_stone:0,End Stone
+ender_chest:0,Ender Chest
+ender_eye:0,Eye of Ender
+ender_pearl:0,Exile Pearl
+experience_bottle:0,Bottle of Enchanting
+farmland:0,Farmland
+feather:0,Feather
+fence:0,Oak Fence
+fence_gate:0,Oak Fence Gate
+fermented_spider_eye:0,Fermented Spider Eye
+filled_map:0,Map
+fire:0,Fire
+fire_charge:0,Fire Charge
+firework_charge:0,Firework Star
+fireworks:0,Firework Rocket
+raw_fish:0,Raw Fish
+fish:1,Raw Salmon
+fish:2,Clownfish
+fish:3,Pufferfish
+fishing_rod:0,Fishing Rod
+flint:0,Flint
+flint_and_steel:0,Flint and Steel
+flower_pot:0,Flower Pot
+flower_pot:0,Flower Pot (Block)
+flowing_lava:0,Lava
+flowing_water:0,Water
+frosted_ice:0,Frosted Ice
+furnace:0,Furnace
+furnace_minecart:0,Powered Minecart
+ghast_tear:0,Ghast Tear
+glass:0,Glass
+glass_bottle:0,Glass Bottle
+glass_pane:0,Glass Pane
+glowstone:0,Glowstone
+glowstone_dust:0,Glowstone Dust
+gold_block:0,Gold Block
+gold_ingot:0,Gold Ingot
+gold_nugget:0,Gold Nugget
+gold_ore:0,Gold Ore
+golden_apple:0,Golden Apple
+golden_apple:1,Enchanted Golden Apple
+gold_axe:0,Gold Axe
+gold_boots:0,Gold Boots
+gold_carrot:0,Golden Carrot
+gold_chestplate:0,Gold Chestplate
+gold_helmet:0,Gold Helmet
+gold_hoe:0,Gold Hoe
+gold_horse_armor:0,Gold Horse Armor
+gold_leggings:0,Gold Leggings
+gold_pickaxe:0,Gold Pickaxe
+gold_rail:0,Powered Rail
+gold_shovel:0,Gold Shovel
+gold_sword:0,Gold Sword
+grass:0,Grass
+grass_path:0,Grass Path
+gravel:0,Gravel
+gunpowder:0,Gunpowder
+hard_clay:0,Hardened Clay
+hay_block:0,Hay Bale
+heavy_weighted_pressure_plate:0,Weighted Pressure Plate (Heavy)
+hopper:0,Hopper
+hopper_minecart:0,Hopper Minecart
+ice:0,Ice
+ink_sack:0,Ink Sack
+ink_sack:1,Rose Red Dye
+ink_sack:2,Cactus Green Dye
+ink_sack:3,Cocoa Bean
+ink_sack:4,Lapis Lazuli
+ink_sack:5,Purple Dye
+ink_sack:6,Cyan Dye
+ink_sack:7,Light Gray Dye
+ink_sack:8,Gray Dye
+ink_sack:9,Pink Dye
+ink_sack:10,Lime Dye
+ink_sack:11,Dandelion Yellow Dye
+ink_sack:12,Light Blue Dye
+ink_sack:13,Magenta Dye
+ink_sack:14,Orange Dye
+ink_sack:15,Bone Meal
+iron_axe:0,Iron Axe
+iron_bars:0,Iron Bars
+iron_block:0,Iron Block
+iron_boots:0,Iron Boots
+iron_chestplate:0,Iron Chestplate
+iron_door:0,Iron Door
+iron_door:0,Iron Door (Block)
+iron_helmet:0,Iron Helmet
+iron_hoe:0,Iron Hoe
+iron_horse_armor:0,Iron Horse Armor
+iron_ingot:0,Iron Ingot
+iron_leggings:0,Iron Leggings
+iron_ore:0,Iron Ore
+iron_pickaxe:0,Iron Pickaxe
+iron_shovel:0,Iron Shovel
+iron_sword:0,Iron Sword
+iron_trapdoor:0,Iron Trapdoor
+item_frame:0,Item Frame
+jukebox:0,Jukebox
+jungle_door:0,Jungle Door
+jungle_door:0,Jungle Door Block
+jungle_fence:0,Fence (Jungle)
+jungle_fence_gate:0,Jungle Fence Gate
+jungle_stairs:0,Jungle Stairs
+ladder:0,Ladder
+lapis_block:0,Lapis Lazuli Block
+lapis_ore:0,Lapis Lazuli Ore
+lava:0,Lava (No Spread)
+lava_bucket:0,Lava Bucket
+lead:0,Lead
+leather:0,Leather
+leather_boots:0,Leather Boots
+leather_chestplate:0,Leather Chestplate
+leather_helmet:0,Leather Helmet
+leather_leggings:0,Leather Leggings
+leaves2,Acacia Leaves
+leaves2:1,Dark Oak Leaves
+leaves:0,Oak Leaves
+leaves:1,Spruce Leaves
+leaves:2,Birch Leaves
+leaves:3,Jungle Leaves
+lever:0,Lever
+light_weighted_pressure_plate:0,Weighted Pressure Plate (Light)
+lit_furnace:0,Furnace (Lit)
+lit_pumpkin:0,Jack-O-Lantern
+lit_redstone_lamp:0,Redstone Lamp (On)
+lit_redstone_ore:0,Redstone Ore (Glowing)
+log2,Acacia Log
+log2:1,Dark Oak Log
+log:0,Oak Log
+log:1,Spruce Log
+log:2,Birch Log
+log:3,Jungle Log
+log:4,Oak 4 Log
+log:5,Oak 5 Log
+magma:0,Magma Block
+magma_cream:0,Magma Cream
+map:0,Empty Map
+melon:0,Melon Slice
+melon_block:0,Melon Block
+melon_seeds:0,Melon Seeds
+melon_stem:0,Melon Vine
+milk_bucket:0,Milk Bucket
+minecart:0,Minecart
+mob_spawner:0,Mob Spawner
+monster_egg:0,Monster Egg (Stone)
+monster_egg:1,Monster Egg (Cobblestone)
+monster_egg:2,Monster Egg (Stone Brick)
+monster_egg:3,Monster Egg (Mossy Stone Brick)
+monster_egg:4,Monster Egg (Cracked Stone)
+monster_egg:5,Monster Egg (Chiseled Stone)
+mossy_cobblestone:0,Moss Stone
+mushroom_stew:0,Mushroom Stew
+mutton:0,Raw Mutton
+mycelium:0,Mycelium
+mycel:0,Mycelium
+name_tag:0,Name Tag
+nether_brick:0,Nether Brick
+nether_brick_fence:0,Nether Brick Fence
+nether_brick_stairs:0,Nether Brick Stairs
+nether_star:0,Nether Star
+nether_stalk:0,Nether Wart
+nether_wart:0,Nether Wart Seeds
+nether_wart_block:0,Nether Wart (Block)
+netherbrick:0,Nether Brick (Item)
+netherrack:0,Netherrack
+noteblock:0,Note Block
+oak_stairs:0,Oak Stairs
+observer:0,Observer
+obsidian:0,Obsidian
+packed_ice:0,Packed Ice
+painting:0,Painting
+paper:0,Paper
+piston:0,Piston
+piston_extension:0,Piston (Moving)
+piston_head:0,Piston (Head)
+planks:0,Oak Plank
+planks:1,Spruce Plank
+planks:2,Birch Plank
+planks:3,Jungle Plank
+planks:4,Acacia Plank
+planks:5,Dark Oak Plank
+poisonous_potato:0,Poisonous Potato
+porkchop:0,Raw Porkchop
+portal:0,Portal
+potato:0,Potato
+potatoes:0,Potatoes
+potion:0,Water Bottle
+potion:16,Awkward Potion
+potion:32,Thick Potion
+potion:64,Mundane Potion
+potion:8193,Regeneration Potion (0:45)
+potion:8194,Swiftness Potion (3:00)
+potion:8195,Fire Resistance Potion (3:00)
+potion:8196,Poison Potion (0:45)
+potion:8197,Healing Potion
+potion:8198,Night Vision Potion (3:00)
+potion:8200,Weakness Potion (1:30)
+potion:8201,Strength Potion (3:00)
+potion:8202,Slowness Potion (1:30)
+potion:8204,Harming Potion
+potion:8205,Water Breathing Potion (3:00)
+potion:8206,Invisibility Potion (3:00)
+potion:8225,Regeneration Potion II (0:22)
+potion:8226,Swiftness Potion II (1:30)
+potion:8228,Poison Potion II (0:22)
+potion:8229,Healing Potion II
+potion:8233,Strength Potion II (1:30)
+potion:8235,Leaping Potion II (1:30)
+potion:8236,Harming Potion II
+potion:8257,Regeneration Potion (2:00)
+potion:8258,Swiftness Potion (8:00)
+potion:8259,Fire Resistance Potion (8:00)
+potion:8260,Poison Potion (2:00)
+potion:8262,Night Vision Potion (8:00)
+potion:8264,Weakness Potion (4:00)
+potion:8265,Strength Potion (8:00)
+potion:8266,Slowness Potion (4:00)
+potion:8267,Leaping Potion (3:00)
+potion:8269,Water Breathing Potion (8:00)
+potion:8270,Invisibility Potion (8:00)
+potion:8289,Regeneration Potion II (1:00)
+potion:8290,Swiftness Potion II (4:00)
+potion:8292,Poison Potion II (1:00)
+potion:8297,Strength Potion II (4:00)
+potion:16385,Regeneration Splash (0:33)
+potion:16386,Swiftness Splash (2:15)
+potion:16387,Fire Resistance Splash (2:15)
+potion:16388,Poison Splash (0:33)
+potion:16389,Healing Splash
+potion:16390,Night Vision Splash (2:15)
+potion:16392,Weakness Splash (1:07)
+potion:16393,Strength Splash (2:15)
+potion:16394,Slowness Splash (1:07)
+potion:16396,Harming Splash
+potion:16397,Breathing Splash (2:15)
+potion:16398,Invisibility Splash (2:15)
+potion:16417,Regeneration Splash II (0:16)
+potion:16418,Swiftness Splash II (1:07)
+potion:16420,Poison Splash II (0:16)
+potion:16421,Healing Splash II
+potion:16425,Strength Splash II (1:07)
+potion:16427,Leaping Splash II (1:07)
+potion:16428,Harming Splash II
+potion:16449,Regeneration Splash (1:30)
+potion:16450,Swiftness Splash (6:00)
+potion:16451,Fire Resistance Splash (6:00)
+potion:16452,Poison Splash (1:30)
+potion:16454,Night Vision Splash (6:00)
+potion:16456,Weakness Splash (3:00)
+potion:16457,Strength Splash (6:00)
+potion:16458,Slowness Splash (3:00)
+potion:16459,Leaping Splash (2:15)
+potion:16461,Breathing Splash (6:00)
+potion:16462,Invisibility Splash (6:00)
+potion:16481,Regeneration Splash II (0:45)
+potion:16482,Swiftness Splash II (3:00)
+potion:16484,Poison Splash II (0:45)
+potion:16489,Strength Splash II (3:00)
+powered_comparator:0,Redstone Comparator (On)
+powered_repeater:0,Repeater (Block On)
+prismarine:0,Prismarine
+prismarine:1,Prismarine Bricks
+prismarine:2,Dark Prismarine
+prismarine_crystals:0,Prismarine Crystals
+prismarine_shard:0,Prismarine Shard
+pumpkin:0,Pumpkin
+pumpkin_pie:0,Pumpkin Pie
+pumpkin_seeds:0,Pumpkin Seeds
+pumpkin_stem:0,Pumpkin Vine
+purple_shulker_box:0,Shulker Box (Purple)
+purpur_block:0,Purpur Block
+purpur_double_slab:0,Double Purpur Slab
+purpur_pillar:0,Purpur Pillar
+purpur_slab:0,Purpur Slab
+purpur_stairs:0,Purpur Stairs
+quartz:0,Nether Quartz
+quartz_block:0,Quartz Block
+quartz_block:1,Chiseled Quartz Block
+quartz_block:2,Pillar Quartz Block
+quartz_ore:0,Nether Quartz Ore
+quartz_stairs:0,Quartz Stairs
+rabbit:0,Raw Rabbit
+rabbit_foot:0,Rabbit's Foot
+rabbit_hide:0,Rabbit Hide
+rabbit_stew:0,Rabbit Stew
+rail:0,Rail
+record_11,Music Disk (11)
+record_13,Music Disk (13)
+record_blocks:0,Music Disk (Blocks)
+record_cat:0,Music Disk (Cat)
+record_chirp:0,Music Disk (Chirp)
+record_far:0,Music Disk (Far)
+record_mall:0,Music Disk (Mall)
+record_mellohi:0,Music Disk (Mellohi)
+record_stal:0,Music Disk (Stal)
+record_strad:0,Music Disk (Strad)
+record_wait:0,Music Disk (Wait)
+record_ward:0,Music Disk (Ward)
+red_flower:0,Poppy
+red_flower:1,Blue Orchid
+red_flower:2,Allium
+red_flower:3,Azure Bluet
+red_flower:4,Red Tulip
+red_flower:5,Orange Tulip
+red_flower:6,White Tulip
+red_flower:7,Pink Tulip
+red_flower:8,Oxeye Daisy
+red_mushroom:0,Red Mushroom
+red_mushroom_block:0,Red Mushroom (Block)
+huge_mushroom_2:14,Red Mushroom (Block)
+red_nether_brick:0,Red Nether Brick
+red_sandstone:0,Red Sandstone
+red_sandstone:1,Chiseled Red Sandstone
+red_sandstone:2,Smooth Red Sandstone
+red_sandstone_stairs:0,Red Sandstone Stairs
+redstone:0,Redstone Dust
+redstone_block:0,Redstone Block
+redstone_lamp:0,Redstone Lamp
+redstone_lamp_off:0,Redstone Lamp
+redstone_ore:0,Redstone Ore
+redstone_torch:0,Redstone Torch
+redstone_wire:0,Redstone Wire
+reeds:0,Sugar Cane
+reeds:0,Sugar Cane (Block)
+repeater:0,Redstone Repeater
+rotten_flesh:0,Rotten Flesh
+saddle:0,Saddle
+sand:0,Sand
+sand:1,Red Sand
+sandstone:0,Sandstone
+sandstone:1,Chiseled Sandstone
+sandstone:2,Smooth Sandstone
+sandstone_stairs:0,Sandstone Stairs
+sapling:-1,Any Sapling
+sapling:0,Oak Sapling
+sapling:1,Spruce Sapling
+sapling:2,Birch Sapling
+sapling:3,Jungle Sapling
+sapling:4,Acacia Sapling
+sapling:5,Dark Oak Sapling
+sea_lantern:0,Sea Lantern
+shears:0,Shears
+shield:0,Shield
+shulker_shell:0,Shulker Shell
+sign:0,Sign
+skull:0,Skeleton Head
+skull:1,Wither Head
+skull:2,Zombie Head
+skull:3,Player Head
+skull:4,Creeper Head
+slime:0,Slime Block
+slimeball:0,Slime Ball
+slime_ball:0,Slime Ball
+smooth_brick:0,Stone Bricks
+smooth_brick:1,Mossy Stone Bricks
+smooth_brick:2,Cracked Stone Bricks
+smooth_brick:3,Chiseled Stone Brick
+snow:0,Snow Block
+snow_layer:0,Snow
+snowball:0,Snowball
+soul_sand:0,Soul Sand
+spawn_egg:50,Creeper Spawn Egg
+spawn_egg:51,Skeleton Spawn Egg
+spawn_egg:52,Spider Spawn Egg
+spawn_egg:54,Zombie Spawn Egg
+spawn_egg:55,Slime Spawn Egg
+spawn_egg:56,Ghast Spawn Egg
+spawn_egg:57,Zombie Pigmen Spawn Egg
+spawn_egg:58,Endermen Spawn Egg
+spawn_egg:59,Cave Spider Spawn Egg
+spawn_egg:60,Silverfish Spawn Egg
+spawn_egg:61,Blaze Spawn Egg
+spawn_egg:62,Magma Cube Spawn Egg
+spawn_egg:65,Bat Spawn Egg
+spawn_egg:66,Witch Spawn Egg
+spawn_egg:67,Endermite Spawn Egg
+spawn_egg:68,Guardian Spawn Egg
+spawn_egg:69,Shulker Spawn Egg
+spawn_egg:90,Pig Spawn Egg
+spawn_egg:91,Sheep Spawn Egg
+spawn_egg:92,Cow Spawn Egg
+spawn_egg:93,Chicken Spawn Egg
+spawn_egg:94,Squid Spawn Egg
+spawn_egg:95,Wolf Spawn Egg
+spawn_egg:96,Mooshroom Spawn Egg
+spawn_egg:98,Ocelot Spawn Egg
+spawn_egg:100,Horse Spawn Egg
+spawn_egg:101,Rabbit Spawn Egg
+spawn_egg:102,Polar Bear Spawn Egg
+spawn_egg:120,Villager Spawn Egg
+speckled_melon:0,Glistering Melon
+spectral_arrow:0,Arrow (Spectral)
+spider_eye:0,Spider Eye
+sponge:0,Sponge
+sponge:1,Wet Sponge
+spruce_door:0,Spruce Door
+spruce_door:0,Spruce Door Block
+spruce_fence:0,Fence (Spruce)
+spruce_fence_gate:0,Spruce Fence Gate
+spruce_stairs:0,Spruce Stairs
+stained_glass:0,White Stained Glass
+stained_glass:1,Orange Stained Glass
+stained_glass:2,Magenta Stained Glass
+stained_glass:3,Light Blue Stained Glass
+stained_glass:4,Yellow Stained Glass
+stained_glass:5,Lime Stained Glass
+stained_glass:6,Pink Stained Glass
+stained_glass:7,Gray Stained Glass
+stained_glass:8,Light Grey Stained Glass
+stained_glass:9,Cyan Stained Glass
+stained_glass:10,Purple Stained Glass
+stained_glass:11,Blue Stained Glass
+stained_glass:12,Brown Stained Glass
+stained_glass:13,Green Stained Glass
+stained_glass:14,Red Stained Glass
+stained_glass:15,Black Stained Glass
+stained_glass_pane:0,White Stained Glass Pane
+stained_glass_pane:1,Orange Stained Glass Pane
+stained_glass_pane:2,Magenta Stained Glass Pane
+stained_glass_pane:3,Light Blue Stained Glass Pane
+stained_glass_pane:4,Yellow Stained Glass Pane
+stained_glass_pane:5,Lime Stained Glass Pane
+stained_glass_pane:6,Pink Stained Glass Pane
+stained_glass_pane:7,Gray Stained Glass Pane
+stained_glass_pane:8,Light Gray Stained Glass Pane
+stained_glass_pane:9,Cyan Stained Glass Pane
+stained_glass_pane:10,Purple Stained Glass Pane
+stained_glass_pane:11,Blue Stained Glass Pane
+stained_glass_pane:12,Brown Stained Glass Pane
+stained_glass_pane:13,Green Stained Glass Pane
+stained_glass_pane:14,Red Stained Glass Pane
+stained_glass_pane:15,Black Stained Glass Pane
+stained_clay:0,White Teracotta
+stained_clay:1,Orange Teracotta
+stained_clay:2,Magenta Teracotta
+stained_clay:3,Light Blue Teracotta
+stained_clay:4,Yellow Teracotta
+stained_clay:5,Lime Teracotta
+stained_clay:6,Pink Teracotta
+stained_clay:7,Gray Teracotta
+stained_clay:8,Light Gray Teracotta
+stained_clay:9,Cyan Teracotta
+stained_clay:10,Purple Teracotta
+stained_clay:11,Blue Teracotta
+stained_clay:12,Brown Teracotta
+stained_clay:13,Green Teracotta
+stained_clay:14,Red Teracotta
+stained_clay:15,Black Teracotta
+standing_banner:0,Standing Banner (Block)
+standing_sign:0,Sign (Block)
+stick:0,Stick
+sticky_piston:0,Sticky Piston
+stone:0,Stone
+stone:1,Granite
+stone:2,Polished Granite
+stone:3,Diorite
+stone:4,Polished Diorite
+stone:5,Andesite
+stone:6,Polished Andesite
+stone_axe:0,Stone Axe
+stone_brick_stairs:0,Stone Brick Stairs
+stone_button:0,Stone Button
+stone_hoe:0,Stone Hoe
+stone_pickaxe:0,Stone Pickaxe
+stone_pressure_plate:0,Stone Pressure Plate
+stone_shovel:0,Stone Shovel
+stone_slab2,Red Sandstone Slab
+stone_slab:0,Stone Slab
+stone_slab:1,Sandstone Slab
+stone_slab:2,Wooden Slab
+stone_slab:3,Cobblestone Slab
+stone_slab:4,Brick Slab
+stone_slab:5,Stone Brick Slab
+stone_slab:6,Nether Brick Slab
+stone_slab:7,Quartz Slab
+stone_stairs:0,Cobblestone Stairs
+stone_sword:0,Stone Sword
+string:0,String
+structure_block:0,Structure Block
+sugar:0,Sugar
+tallgrass:0,Tall Grass (Dead Shrub)
+tallgrass:1,Tall Grass
+tallgrass:2,Tall Grass (Fern)
+tnt:0,TNT
+tnt_minecart:0,TNT Minecart
+torch:0,Torch
+totem:0,Totem of Undying
+trapdoor:0,Trapdoor
+trapped_chest:0,Trapped Chest
+tripwire:0,Tripwire
+tripwire_hook:0,Tripwire Hook
+unlit_redstone_torch:0,Redstone Torch
+unpowered_comparator:0,Comparator
+unpowered_repeater:0,Repeater
+vine:0,Vine
+wall_banner:0,Wall Banner (Block)
+wall_sign:0,Sign (Wall Block)
+water:0,Water (No Spread)
+water_bucket:0,Water Bucket
+waterlily:0,Lily Pad
+web:0,Cobweb
+wheat:0,Wheat
+wheat_seeds:0,Wheat Seeds
+wooden_axe:0,Wooden Axe
+wooden_button:0,Wooden Button
+wooden_door:0,Wooden Door
+wooden_hoe:0,Wooden Hoe
+wooden_pickaxe:0,Wooden Pickaxe
+wooden_pressure_plate:0,Wooden Pressure Plate
+wooden_shovel:0,Wooden Shovel
+wooden_slab:0,Oak Slab
+wooden_slab:1,Spruce Slab
+wooden_slab:2,Birch Slab
+wooden_slab:3,Jungle Slab
+wooden_slab:4,Acacia Slab
+wooden_slab:5,Dark Oak Slab
+wooden_sword:0,Wooden Sword
+wool:0,Wool
+wool:1,Orange Wool
+wool:2,Magenta Wool
+wool:3,Light Blue Wool
+wool:4,Yellow Wool
+wool:5,Lime Wool
+wool:6,Pink Wool
+wool:7,Gray Wool
+wool:8,Light Gray Wool
+wool:9,Cyan Wool
+wool:10,Purple Wool
+wool:11,Blue Wool
+wool:12,Brown Wool
+wool:13,Green Wool
+wool:14,Red Wool
+wool:15,Black Wool
+writable_book:0,Book and Quill
+written_book:0,Written Book
+yellow_flower:0,Dandelion
