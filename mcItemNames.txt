@@ -96,7 +96,7 @@ chorus_fruit_popped:0,Popped Chorus Fruit
 chorus_plant:0,Chorus Plant
 clay:0,Clay Block
 clay_ball:0,Clay
-clock:0,Watch
+watch:0,Watch
 coal:0,Coal
 coal:1,Charcoal
 coal_block:0,Coal Block
