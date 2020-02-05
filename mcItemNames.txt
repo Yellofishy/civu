@@ -252,8 +252,8 @@ gold_plate:0,Weighted Pressure Plate (Light)
 gold_record:0,Music Disk (13)
 gold_spade:0,Gold Shovel
 gold_sword:0,Gold Sword
-golden_apple:0,Golden Apple
-golden_apple:1,Enchanted Golden Apple
+golden_apple:0,Stamina
+golden_apple:1,Stamina
 grass:0,Grass
 grass_path:0,Grass Path
 gravel:0,Gravel
@@ -548,8 +548,7 @@ redstone_ore:0,Redstone Ore
 redstone_torch:0,Redstone Torch
 redstone_torch_on:0,Redstone Torch
 redstone_wire:0,Redstone Wire
-reeds:0,Sugar Cane
-reeds:0,Sugar Cane (Block)
+sugar_cane:0,Sugar Cane
 repeater:0,Redstone Repeater
 rotten_flesh:0,Rotten Flesh
 saddle:0,Saddle
