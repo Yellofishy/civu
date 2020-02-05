@@ -93,7 +93,9 @@
 	        if(factory.setupcost) {
 	            $("#setup").html("Setup Cost: ");
 	            $.each(factory.setupcost, function(key, value){
-	                $("#setup").append(value.amount + " " + key.replace(/_/g, ' ') + ", ");
+					console.log(value);
+	                //$("#setup").append(value.amount + " " + value.replace(/_/g, ' ') + ", ");
+	                $("#setup").append(attachIcon(value) + ", ");
 	            });
 	        } else {
 	            $.each(recipes, function(name, recipe) {
