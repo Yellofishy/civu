@@ -932,7 +932,7 @@ recipes:
         input:
             sapling: {material: SAPLING, amount: 64, durability: -1}
         output:
-            oak_sapling: {material: SAPLING, amount: 32}
+            oak_sapling: {material: SAPLING, amount: 16}
     sapling_to_spruce:
         production_time: 4s
         name: 'Convert Any Sapling to Spruce Sapling'
@@ -940,7 +940,7 @@ recipes:
         input:
             sapling: {material: SAPLING, amount: 64, durability: -1}
         output:
-            spruce_sapling: {material: SAPLING, amount: 32, durability: 1}
+            spruce_sapling: {material: SAPLING, amount: 16, durability: 1}
     sapling_to_birch:
         production_time: 4s
         name: 'Convert Any Sapling to Birch Sapling'
@@ -948,7 +948,7 @@ recipes:
         input:
             sapling: {material: SAPLING, amount: 64, durability: -1}
         output:
-            birch_sapling: {material: SAPLING, amount: 32, durability: 2}
+            birch_sapling: {material: SAPLING, amount: 16, durability: 2}
     sapling_to_jungle:
         production_time: 4s
         name: 'Convert Any Sapling to Jungle Sapling'
@@ -956,7 +956,7 @@ recipes:
         input:
             sapling: {material: SAPLING, amount: 64, durability: -1}
         output:
-            jungle_sapling: {material: SAPLING, amount: 32, durability: 3}
+            jungle_sapling: {material: SAPLING, amount: 16, durability: 3}
     sapling_to_acacia:
         production_time: 4s
         name: 'Convert Any Sapling to Acacia Sapling'
@@ -964,7 +964,7 @@ recipes:
         input:
             sapling: {material: SAPLING, amount: 64, durability: -1}
         output:
-            acacia_sapling: {material: SAPLING, amount: 32, durability: 4}
+            acacia_sapling: {material: SAPLING, amount: 16, durability: 4}
     sapling_to_dark_oak:
         production_time: 4s
         name: 'Convert Any Sapling to Dark Oak Sapling'
@@ -972,7 +972,7 @@ recipes:
         input:
             sapling: {material: SAPLING, amount: 64, durability: -1}
         output:
-            dark_oak_sapling: {material: SAPLING, amount: 32, durability: 5}
+            dark_oak_sapling: {material: SAPLING, amount: 16, durability: 5}
     make_mushroom_brown:
         type: PRODUCTION
         name: 'Make Brown Mushroom Blocks'
@@ -1012,7 +1012,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: BEETROOT_SEEDS, amount: 32}
+            outseeds: {material: BEETROOT_SEEDS, amount: 16}
     seeds_to_carrots:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Carrots'
@@ -1020,7 +1020,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: CARROT_ITEM, amount: 32}
+            outseeds: {material: CARROT_ITEM, amount: 16}
     seeds_to_potatoes:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Potatoes'
@@ -1028,7 +1028,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: POTATO_ITEM, amount: 32}
+            outseeds: {material: POTATO_ITEM, amount: 16}
     seeds_to_warts:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Netherwarts'
@@ -1036,7 +1036,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: NETHER_STALK, amount: 32}
+            outseeds: {material: NETHER_STALK, amount: 16}
     seeds_to_cocoa:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Cocoa'
@@ -1044,7 +1044,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: INK_SACK, amount: 32, durability: 3}
+            outseeds: {material: INK_SACK, amount: 16, durability: 3}
     seeds_to_cacti:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Cacti'
@@ -1052,7 +1052,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: CACTUS, amount: 32}
+            outseeds: {material: CACTUS, amount: 16}
     seeds_to_reeds:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Sugarcane'
@@ -1060,7 +1060,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: SUGAR_CANE, amount: 32}
+            outseeds: {material: SUGAR_CANE, amount: 16}
     seeds_to_melonseeds:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Melon Seeds'
@@ -1068,7 +1068,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: MELON_SEEDS, amount: 32}
+            outseeds: {material: MELON_SEEDS, amount: 16}
     seeds_to_pumpkinseeds:
         type: PRODUCTION
         name: 'Transform Wheat Seeds into Pumpkin Seeds'
@@ -1076,7 +1076,7 @@ recipes:
         input:
             seeds: {material: SEEDS, amount: 640}
         output:
-            outseeds: {material: PUMPKIN_SEEDS, amount: 32}
+            outseeds: {material: PUMPKIN_SEEDS, amount: 16}
     pack_ice:
         forceInclude: true
         type: PRODUCTION
@@ -1709,6 +1709,22 @@ recipes:
             wood: {material: WOOD, amount: 1, durability: -1}
         output:
             door: {material: WOOD_SWORD, amount: 1, lore: ['Practice makes perfect!']}
+    make_chests_1:
+        production_time: 4s
+        name: 'Craft Chests (Log Type 1)'
+        type: PRODUCTION
+        input:
+            log: {material: LOG, amount: 128, durability: -1}
+        output:
+            chest: {material: CHEST, amount: 64}
+    make_chests_2:
+        production_time: 4s
+        name: 'Craft Chests (Log Type 2)'
+        type: PRODUCTION
+        input:
+            log: {material: LOG2, amount: 128, durability: -1}
+        output:
+            chest: {material: CHEST, amount: 64}
     make_boat:
         production_time: 4s
         name: 'Make Boat'

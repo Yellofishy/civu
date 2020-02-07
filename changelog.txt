@@ -6,6 +6,10 @@
     - Lored item differentiation (esp. compacted stuff)
     - General plugin guides, such as ItemExchange and Factory basics
     - Server intro guide -> link to more detailed plugin guides?
+# 07 Feb 2020
+    - UPDATED: Factory Recipes to include todays update
+	(Bio Lab: Seed + Sapling convertion outputs halved)
+	(Carpentry Factory: Logs -> Chests recipies added)
 # 25 Jan 2020
     - ADDED: More friendly names to Factory Recipes page
       (eg: "Oak Sapling", "Any Sapling", "Exile Pearl", etc)
