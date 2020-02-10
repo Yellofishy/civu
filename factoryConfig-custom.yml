@@ -215,6 +215,8 @@ factories:
             - make_sports_balls
             - make_sports_sticks
             - make_training_sword
+            - make_chests_1
+            - make_chests_2
             - repair_carpentry
     basic_cauldron:
         type: FCC
