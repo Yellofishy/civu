@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<meta content="en-gb" http-equiv="Content-Language" />
+<meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+<title>FactoryMod Recipes - ShenanigansMC's CivRealms Help</title>
+<link href="./css/items.css" rel="stylesheet" type="text/css">
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+<!-- Side navigation -->
+<div class="sidenav">
+  <p>ShenanigansMC's CivRealms Help</p>
+  <a href="index">Home</a>
+  <a href="factoryRecipes">Factory Recipes</a>
+  <a href="items" class="sidenav-selected">Items</a>
+  <a href="changelog">Changelog</a>
+</div>
+
+<!-- Page content -->
+<div class="main" >
+	<body onload="onLoad()"> 
+	<div id="item-list">
+		<p>list of items!</p>
+		<a href="../items#Stone" onclick="loadItem('Stone');">heres a link to stone</a>
+	</div>
+
+	<div id="item-info"> 
+		<div>
+			<a href="items" onclick="returnToItemList(); return false;"><< Back to Item List</a>
+		</div>
+	
+		<hr>
+		
+		<!-- ITEM BASICS -->
+		<div id="item-basics" class="category basics" >
+
+			<h1 id="item-name">ITEM NAME</h1>
+			<p id="item-desc">DESC/TIPS</p>
+			<!--disabled for now: <img id="item-img" src="../img/mc/blocks/stone.png" style="width:100px;height:100px;float:right;">  -->
+		</div>
+
+		<hr>
+
+		<!-- CRAFTING RECIPES AND USES -->
+		<div id="item-crafting" class="category crafting">
+			<div>
+				<h2>Crafting</h2> 
+			</div>
+			<div class="split left">
+				<h3>Made From</p>>
+			</div>
+		
+			<div class="split right">
+				<h3>Used In</p>>
+			</div>
+		</div>
+
+		<hr>
+
+		<!-- FACTORY RECIPES AND USES -->
+		<div id="item-crafting" class="category factories">
+			<div>
+				<h2>Factories</h2> 
+			</div>
+			<div class="split left">
+				<h3>Made From</p>>
+			</div>
+		
+			<div class="split right">
+				<h3>Used In</p>>
+			</div>
+		</div>
+		
+
+	</div>
+
+	<div id="item-error" hidden>
+		<p>Sorry! Could not find that item.</p>
+		<br>
+		<a href="items" onclick="returnToItemList(); return false;"><< Back to Item List</a>
+	</div>
+	
+  
+	<script>
+
+		function onLoad() {
+			browserSpecific()
+
+
+
+			if(window.location.hash) {
+				loadItem(window.location.hash.substring(1));
+			} else {
+				showItemList();
+			}
+		}
+		
+		function returnToItemList() {
+			clearHash();
+			showItemList();
+
+		}
+
+		function loadItem(internalname) {
+			document.getElementById("item-name").innerHTML = internalname;
+			success = true;
+			if (success == true) {
+				showItemInfo();
+			} else {
+				showError();
+			}
+
+		}
+
+		function showItemList() {
+			document.getElementById("item-list").style.display="block";
+			document.getElementById("item-info").style.display="none";
+			document.getElementById("item-error").style.display="none";
+		}
+
+		function showItemInfo(){
+			document.getElementById("item-list").style.display="none";
+			document.getElementById("item-info").style.display="block";
+		}
+
+		function showError() {
+			document.getElementById("item-list").style.display="none";
+			document.getElementById("item-info").style.display="none";
+			document.getElementById("item-error").style.display="block";
+		}
+
+		function clearHash() {
+			// remove hash without causing reload
+			window.location.replace("#");
+			if (typeof window.history.replaceState == 'function') {
+				history.replaceState({}, '', window.location.href.slice(0, -1));
+			}
+		}
+
+		function browserSpecific() {
+			if (navigator.userAgent.includes("Chrome")) {
+				document.getElementById("item-img").style.imageRendering="pixelated";
+				console.log("Chrome detected");
+			} else if (navigator.userAgent.includes("Firefox")) {
+				document.getElementById("item-img").style.imageRendering="crisp-edges";
+				console.log("Firefox detected :D");
+			} else {
+				console.log("Unknown browser");
+			}
+		}
+	</script>
+
+</div> 
+</body>
+
+</html>
