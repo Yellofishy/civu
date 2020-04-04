@@ -1,0 +1,27 @@
+items:
+- Name: Stone
+  Description: ''
+  IconLocation: ''
+  crafting:
+    MadeBy:
+    - TestMadeByCraft
+    UsedIn:
+    - TestUsedInCraft
+  factory:
+    MadeBy:
+    - TestMadeByFactory
+    UsedIn:
+    - TestUsedInFactory
+- Name: Dirt
+  Description: ''
+  IconLocation: ''
+  crafting:
+    MadeBy:
+    - TestMadeByCraft
+    UsedIn:
+    - TestUsedInCraft
+  factory:
+    MadeBy:
+    - TestMadeByFactory
+    UsedIn:
+    - TestUsedInFactory
