@@ -4,24 +4,40 @@ items:
   IconLocation: ''
   crafting:
     MadeBy:
-    - TestMadeByCraft
+    - TestMadeByCraft1Stone
+    - TestMadeByCraft2Stone
+    - TestMadeByCraft3Stone
     UsedIn:
-    - TestUsedInCraft
+    - TestUsedInCraft1Stone
+    - TestUsedInCraft2Stone
+    - TestUsedInCraft3Stone
   factory:
     MadeBy:
-    - TestMadeByFactory
+    - TestMadeByFactory1Stone
+    - TestMadeByFactory2Stone
+    - TestMadeByFactory3Stone
     UsedIn:
-    - TestUsedInFactory
+    - TestUsedInFactory1Stone
+    - TestUsedInFactory2Stone
+    - TestUsedInFactory3Stone
 - Name: Dirt
   Description: ''
   IconLocation: ''
   crafting:
     MadeBy:
-    - TestMadeByCraft
+    - TestMadeByCraft1Dirt
+    - TestMadeByCraft2Dirt
+    - TestMadeByCraft3Dirt
     UsedIn:
-    - TestUsedInCraft
+    - TestUsedInCraft1Dirt
+    - TestUsedInCraft2Dirt
+    - TestUsedInCraft3Dirt
   factory:
     MadeBy:
-    - TestMadeByFactory
+    - TestMadeByFactory1Dirt
+    - TestMadeByFactory2Dirt
+    - TestMadeByFactory3Dirt
     UsedIn:
-    - TestUsedInFactory
+    - TestUsedInFactory1Dirt
+    - TestUsedInFactory2Dirt
+    - TestUsedInFactory3Dirt
