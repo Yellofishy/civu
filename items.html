@@ -23,15 +23,18 @@
 
 <!-- Page content -->
 <div class="main" >
-	<body onload="onLoad()"> 
+	<!--<body onload="onLoad()"> -->
 	<div id="item-list">
 		<p>list of items!</p>
 		<a href="../items#Stone" onclick="loadItem('Stone');">heres a link to stone</a>
+		<a href="../items#Dirt" onclick="loadItem('Dirt');">heres a link to dirt</a>
+		<a href="../items#Evilium" onclick="loadItem('Evilium');">heres a link to something broken</a>
 	</div>
 
 	<div id="item-info"> 
 		<div>
 			<a href="items" onclick="returnToItemList(); return false;"><< Back to Item List</a>
+			<div id="outtemp"></div>
 		</div>
 	
 		<hr>
@@ -48,35 +51,35 @@
 
 		<!-- CRAFTING RECIPES AND USES -->
 		<div id="item-crafting" class="category crafting">
-			<div>
-				<h2>Crafting</h2> 
-			</div>
-			<div class="split left">
-				<h3>Made From</p>>
+			<h2>Crafting</h2> 
+
+			<h3>Made From</p>
+			<div id="crafting-madefrom">
 			</div>
 		
-			<div class="split right">
-				<h3>Used In</p>>
+			<h3>Used In</p>
+			<div id="crafting-usedin">
 			</div>
+			
 		</div>
 
 		<hr>
 
 		<!-- FACTORY RECIPES AND USES -->
-		<div id="item-crafting" class="category factories">
-			<div>
-				<h2>Factories</h2> 
-			</div>
-			<div class="split left">
-				<h3>Made From</p>>
+		<div id="item-factory" class="category factories">
+			<h2>Factories</h2> 
+			
+			<h3>Made From</p>
+			<div id="factories-madefrom">
 			</div>
 		
-			<div class="split right">
-				<h3>Used In</p>>
+			<h3>Used In</p>
+			<div id="factories-usedin">
 			</div>
-		</div>
-		
 
+		</div>
+
+		
 	</div>
 
 	<div id="item-error" hidden>
@@ -85,13 +88,23 @@
 		<a href="items" onclick="returnToItemList(); return false;"><< Back to Item List</a>
 	</div>
 	
-  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/yamljs/0.3.0/yaml.min.js"></script>
 	<script>
+
+		var dataItems;
+
+		$(document).ready(() => {
+			$.get("https://raw.githubusercontent.com/ShenanMC/shenanmc.github.io/dev/data/items.yaml", (data) => {
+				dataItems = YAML.parse(data);
+				onLoad();
+			});
+		});
+
+
 
 		function onLoad() {
 			browserSpecific()
-
-
 
 			if(window.location.hash) {
 				loadItem(window.location.hash.substring(1));
@@ -107,14 +120,64 @@
 		}
 
 		function loadItem(internalname) {
-			document.getElementById("item-name").innerHTML = internalname;
-			success = true;
-			if (success == true) {
-				showItemInfo();
+			var itemData = getItemData(internalname);
+
+			if (itemData != null) {
+				clearData();
+
+				document.getElementById("item-name").innerHTML = itemData.Name;
+				document.getElementById("item-desc").innerHTML = itemData.Description;
+		
+				var i;
+				for (i = 0; i<itemData.crafting.MadeBy.length;i++) {
+					document.getElementById("crafting-madefrom").innerHTML += "<p>" + itemData.crafting.MadeBy[i] + "</p>";
+				}
+				
+				var i;
+				for (i = 0; i<itemData.crafting.UsedIn.length;i++) {
+					document.getElementById("crafting-usedin").innerHTML += "<p>" + itemData.crafting.UsedIn[i] + "</p>";
+				}
+				
+				var i;
+				for (i = 0; i<itemData.factory.MadeBy.length;i++) {
+					document.getElementById("factories-madefrom").innerHTML += "<p>" + itemData.factory.MadeBy[i] + "</p>";
+				}
+				
+				var i;
+				for (i = 0; i<itemData.factory.UsedIn.length;i++) {
+					document.getElementById("factories-usedin").innerHTML += "<p>" + itemData.factory.UsedIn[i] + "</p>";
+				}
+
+
+				success = true;
+				if (success == true) {
+					showItemInfo();
+				} else {
+					showError();
+				}
 			} else {
 				showError();
 			}
+		}
 
+		function clearData() {
+			document.getElementById("item-name").innerHTML = "";
+			document.getElementById("item-desc").innerHTML = "";
+
+			document.getElementById("crafting-madefrom").innerHTML = "";
+			document.getElementById("crafting-usedin").innerHTML = "";
+			document.getElementById("factories-madefrom").innerHTML = "";
+			document.getElementById("factories-usedin").innerHTML = "";
+		}
+
+		function getItemData(internalname) {
+			var i;
+			for (i = 0; i < dataItems.items.length; i++) {
+				if (dataItems.items[i].Name == internalname) {
+					return dataItems.items[i];
+				}
+			} 
+			return null;
 		}
 
 		function showItemList() {
@@ -143,7 +206,8 @@
 		}
 
 		function browserSpecific() {
-			if (navigator.userAgent.includes("Chrome")) {
+			return; // images disabled for now
+/* 			if (navigator.userAgent.includes("Chrome")) {
 				document.getElementById("item-img").style.imageRendering="pixelated";
 				console.log("Chrome detected");
 			} else if (navigator.userAgent.includes("Firefox")) {
@@ -151,7 +215,7 @@
 				console.log("Firefox detected :D");
 			} else {
 				console.log("Unknown browser");
-			}
+			} */
 		}
 	</script>
 
