@@ -1,2 +1,2 @@
-# ShenanigansMC's CivRealms Help Page
-View the website here: https://shenanmc.github.io
+# Yellofishy's CivUniverse Help Page
+View the website here: https://yellofishy.github.io/civu
