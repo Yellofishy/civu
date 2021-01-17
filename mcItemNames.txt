@@ -97,6 +97,16 @@ chorus_plant:0,Chorus Plant
 clay:0,Clay Block
 clay_ball:0,Clay
 watch:0,Watch
+cobalt,Cobalt Ingot
+cobalt_sword,Cobalt Sword
+cobalt_pickaxe,Cobalt Pickaxe
+cobalt_shovel,Cobalt Shovel
+cobalt_axe,Cobalt Axe
+cobalt_hoe,Cobalt Hoe
+cobalt_helm,Cobalt Helmet
+cobalt_chest,Cobalt Chestplate
+cobalt_leg,Cobalt Leggings
+cobalt_boot,Cobalt Boots
 coal:0,Coal
 coal:1,Charcoal
 coal_block:0,Coal Block
