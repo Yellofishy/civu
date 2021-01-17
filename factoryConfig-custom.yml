@@ -4935,7 +4935,7 @@ recipes:
                 durability: 1
         output:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 16
                 name: Cobalt Ingot
                 lore:
@@ -5068,14 +5068,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 20
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             cobalt_helm_enchant:
-                material: DIAMOND_HELMET
+                material: COBALT_HELM
                 amount: 4
                 name: Cobalt Helmet
                 lore:
@@ -5086,14 +5086,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 32
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             cobalt_chest_enchant:
-                material: DIAMOND_CHESTPLATE
+                material: COBALT_CHEST
                 amount: 4
                 name: Cobalt Chestplate
                 lore:
@@ -5104,14 +5104,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 28
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             cobalt_leg_enchant:
-                material: DIAMOND_LEGGINGS
+                material: COBALT_LEG
                 amount: 4
                 name: Cobalt Leggings
                 lore:
@@ -5122,14 +5122,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 16
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             cobalt_boot_enchant:
-                material: DIAMOND_BOOTS
+                material: COBALT_BOOT
                 amount: 4
                 name: Cobalt Boots
                 lore:
@@ -5148,7 +5148,7 @@ recipes:
                 amount: 16
                 durability: 1
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 4
                 lore:
                  - Makes enchantable gear
@@ -5160,14 +5160,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 12
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             tool:
-                material: DIAMOND_PICKAXE
+                material: COBALT_PICKAXE
                 amount: 9
                 name: Cobalt Pickaxe
                 lore:
@@ -5178,14 +5178,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 12
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             tool:
-                material: DIAMOND_AXE
+                material: COBALT_AXE
                 amount: 9
                 name: Cobalt Axe
                 lore:
@@ -5196,14 +5196,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 8
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             tool:
-                material: DIAMOND_HOE
+                material: COBALT_HOE
                 amount: 9
                 name: Cobalt Hoe
                 lore:
@@ -5214,14 +5214,14 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 4
                 name: Cobalt Ingot
                 lore:
                  - Makes enchantable gear
         output:
             tool:
-                material: DIAMOND_SPADE
+                material: COBALT_SHOVEL
                 amount: 9
                 name: Cobalt Shovel
                 lore:
@@ -5232,7 +5232,7 @@ recipes:
         production_time: 4s
         input:
             cobalt:
-                material: DIAMOND
+                material: COBALT
                 amount: 8
                 name: Cobalt Ingot
                 lore:
@@ -5244,7 +5244,7 @@ recipes:
                 durability: 1
         output:
             tool:
-                material: DIAMOND_SWORD
+                material: COBALT_SWORD
                 amount: 9
                 name: Cobalt Sword
                 lore:
@@ -5255,7 +5255,7 @@ recipes:
         production_time: 4s
         input:
             diamond:
-                material: DIAMOND
+                material: COBALT
                 amount: 8
             energy:
                 material: GOLDEN_APPLE
