@@ -213,6 +213,7 @@ end_rod:0,End rod
 end_stone:0,End Stone
 ender_chest:0,Ender Chest
 ender_pearl:0,Exile Pearl
+ENDER_STONE:0,End Stone
 experience_bottle:0,Bottle of Enchanting
 eye_of_ender:0,Eye of Ender
 farmland:0,Farmland
