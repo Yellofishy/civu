@@ -688,6 +688,9 @@ stained_glass_pane:14,Red Stained Glass Pane
 stained_glass_pane:15,Black Stained Glass Pane
 standing_banner:0,Standing Banner (Block)
 standing_sign:0,Sign (Block)
+STEP_QUARTZ:0,Smooth Quartz slab
+STEP_STONE:0,Smooth Stone Slab
+STEP_SANDSTONE:0,Smooth Sandstone Slab
 stick:0,Stick
 sticky_piston:0,Sticky Piston
 stone:0,Stone

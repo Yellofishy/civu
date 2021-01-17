@@ -87,7 +87,7 @@ factories:
          - charcoal_from_logs
          - charcoal_from_logs2
          - charcoal_from_coal
-         - repair_charcoal 
+         - repair_charcoal
     Oven:
         type: FCC
         name: Oven
@@ -105,7 +105,7 @@ factories:
                 material: LOG
                 amount: 16
                 durability: -1
-        recipes:        
+        recipes:
          - cook_steak
          - cook_chicken
          - cook_pork
@@ -153,7 +153,7 @@ factories:
          - make_smooth_stone_slab
          - make_smooth_sandstone_slab
          - make_smooth_quartz_slab
-         - repair_aesthetics     
+         - repair_aesthetics
     Dye:
         type: FCC
         name: Dyeing Factory
@@ -199,7 +199,7 @@ factories:
          - dye_glass_green
          - dye_glass_red
          - dye_glass_black
-         - repair_dye 
+         - repair_dye
     Loom:
         type: FCC
         name: Loom
@@ -233,7 +233,7 @@ factories:
         name: Concrete Mixer
         setupcost:
             sand:
-                material: SAND  
+                material: SAND
                 amount: 256
             gravel:
                 material: GRAVEL
@@ -343,7 +343,7 @@ factories:
          - make_chests
          - make_trapped_chests
          - repurpose_sticks
-         - repair_carpentry     
+         - repair_carpentry
     PrintingPress:
         type: FCC
         name: Printing Press
@@ -356,14 +356,14 @@ factories:
                 amount: 64
         recipes:
          - bind_books
-         
+
          - bind_writable_books
          - make_ink
          - craft_printing_plate
          - print_book
          - print_note
          - print_secure_note
-         - repair_printingpress       
+         - repair_printingpress
     IronForge:
         type: FCC
         name: Iron Forge
@@ -432,7 +432,7 @@ factories:
          - make_ward
          - make_11
          - make_wait
-         - repair_electronics   
+         - repair_electronics
     TerraformingFactory:
         type: FCC
         name: Terraforming Factory
@@ -473,7 +473,7 @@ factories:
         recipes:
          - compact
          - decompact
-         - repair_compactor     
+         - repair_compactor
     OreSmelter:
         type: FCC
         name: Ore Smelter
@@ -545,7 +545,7 @@ factories:
         recipes:
          - make_vault_bastion
          - make_city_bastion
-         - repair_bastion     
+         - repair_bastion
     CobaltArmourFactory:
         type: FCC
         name: Cobalt Armour Factory
@@ -594,7 +594,7 @@ factories:
          - dia_hoe_enchant
          - dia_sword_enchant
          - dia_shovel_enchant
-         - repair_cobalttoolfactory 
+         - repair_cobalttoolfactory
     BasicCauldron:
         type: FCC
         name: Basic Cauldron
@@ -614,7 +614,7 @@ factories:
                 amount: 32
                 durability: 1
         recipes:
-         - make_xpa         
+         - make_xpa
          - make_xpt
          - make_xpc
          - make_xpj
@@ -642,7 +642,7 @@ factories:
                 amount: 32
                 durability: 1
         recipes:
-         - make_advancedxp1         
+         - make_advancedxp1
          - make_advancedxp2
          - make_netherstar
          - repair_advancedcauldron
@@ -688,7 +688,7 @@ recipes:
             stone:
                 material: STONE
                 amount: 384
-        factory: Basic Smelter     
+        factory: Basic Smelter
     make_charcoal:
         type: UPGRADE
         production_time: 4s
@@ -698,7 +698,7 @@ recipes:
                 material: COAL
                 durability: 1
                 amount: 384
-        factory: Charcoal Factory    
+        factory: Charcoal Factory
     make_oven:
         type: UPGRADE
         production_time: 4s
@@ -717,7 +717,7 @@ recipes:
                 material: LOG
                 amount: 16
                 durability: -1
-        factory: Oven        
+        factory: Oven
     make_aesthetics:
         type: UPGRADE
         production_time: 4s
@@ -730,7 +730,7 @@ recipes:
                 material: INK_SACK
                 durability: 15
                 amount: 32
-        factory: Aesthetics Factory   
+        factory: Aesthetics Factory
     make_dye:
         type: UPGRADE
         production_time: 4s
@@ -761,7 +761,7 @@ recipes:
         name: Make Concrete Mixer
         input:
             sand:
-                material: SAND  
+                material: SAND
                 amount: 256
             gravel:
                 material: GRAVEL
@@ -784,7 +784,7 @@ recipes:
                 amount: 16
             leather:
                 material: LEATHER
-                amount: 32       
+                amount: 32
         factory: Agriculture Factory
     make_carpentry:
         type: UPGRADE
@@ -794,7 +794,7 @@ recipes:
             chest:
                 material: CHEST
                 amount: 32
-        factory: Carpentry Factory       
+        factory: Carpentry Factory
     make_printingpress:
         type: UPGRADE
         production_time: 4s
@@ -806,7 +806,7 @@ recipes:
             paper:
                 material: PAPER
                 amount: 64
-        factory: Printing Press           
+        factory: Printing Press
     make_compactor:
         type: UPGRADE
         production_time: 4s
@@ -831,7 +831,7 @@ recipes:
                 amount: 16
                 lore:
                  - Crate
-        factory: Compactor    
+        factory: Compactor
     make_oresmelter:
         type: UPGRADE
         production_time: 4s
@@ -889,7 +889,7 @@ recipes:
                 name: Energy
                 amount: 32
                 durability: 1
-        factory: Bastion Factory  
+        factory: Bastion Factory
     make_cobaltarmourfactory:
         type: UPGRADE
         production_time: 4s
@@ -929,7 +929,7 @@ recipes:
                 name: Energy
                 amount: 32
                 durability: 1
-        factory: Cobalt Tool Factory 
+        factory: Cobalt Tool Factory
     make_ironforge:
         type: UPGRADE
         production_time: 4s
@@ -937,7 +937,7 @@ recipes:
         input:
             iron:
                 material: IRON_BLOCK
-                amount: 32    
+                amount: 32
         factory: Iron Forge
     make_electronicsfactory:
         type: UPGRADE
@@ -953,7 +953,7 @@ recipes:
             gold:
                 material: GOLD_INGOT
                 amount: 32
-        factory: Electronics Factory          
+        factory: Electronics Factory
     make_terraformingfactory:
         type: UPGRADE
         production_time: 4s
@@ -962,7 +962,7 @@ recipes:
             endstone:
                 material: ENDER_STONE
                 amount: 384
-        factory: Terraforming Factory 
+        factory: Terraforming Factory
     make_basiccauldron:
         type: UPGRADE
         production_time: 4s
@@ -982,7 +982,7 @@ recipes:
             gold:
                 material: GOLD_INGOT
                 amount: 32
-        factory: Basic Cauldron  
+        factory: Basic Cauldron
     make_advancedcauldron:
         type: UPGRADE
         production_time: 4s
@@ -1004,8 +1004,8 @@ recipes:
                 amount: 32
             emerald_block:
                 material: EMERALD_BLOCK
-                amount: 128        
-        factory: Advanced Cauldron        
+                amount: 128
+        factory: Advanced Cauldron
     make_recycler:
         type: UPGRADE
         production_time: 4s
@@ -1027,7 +1027,7 @@ recipes:
                 durability: 1
             emerald_block:
                 material: EMERALD_BLOCK
-                amount: 4        
+                amount: 4
         factory: Recycler
     repair_basic:
         type: REPAIR
@@ -1180,7 +1180,7 @@ recipes:
             stick:
                 material: STICK
                 amount: 1
-        health_gained: 10000000 
+        health_gained: 10000000
 ###CHARCOAL FACTORY RECIPES
     charcoal_from_logs:
         type: PRODUCTION
@@ -1320,7 +1320,7 @@ recipes:
         output:
             bread:
                 material: BREAD
-                amount: 48           
+                amount: 48
     bake_potato:
         type: PRODUCTION
         name: Bake Potato
@@ -1348,7 +1348,7 @@ recipes:
         output:
             cookie:
                 material: COOKIE
-                amount: 512         
+                amount: 512
     make_pie:
         type: PRODUCTION
         name: Make Pies
@@ -1714,7 +1714,7 @@ recipes:
                 amount: 64
         output:
             stone_slab:
-                material: STEP
+                material: STEP_STONE
                 amount: 182
                 lore:
                  - Smooth double slab
@@ -1729,7 +1729,7 @@ recipes:
                 amount: 64
         output:
             sandstone_slab:
-                material: STEP
+                material: STEP_SANDSTONE
                 durability: 1
                 amount: 192
                 lore:
@@ -1745,11 +1745,11 @@ recipes:
                 amount: 192
         output:
             quartz_slab:
-                material: STEP
+                material: STEP_QUARTZ
                 durability: 7
                 amount: 128
                 lore:
-                 - Smooth double slab     
+                 - Smooth double slab
     repair_aesthetics:
         type: REPAIR
         name: Repair Factory
@@ -2303,13 +2303,13 @@ recipes:
             black_clay:
                 material: STAINED_CLAY
                 durability: 15
-                amount: 64    
+                amount: 64
     repair_dye:
         type: REPAIR
         name: Repair Factory
         production_time: 4s
         input:
-            stick: 
+            stick:
                 material: STICK
                 amount: 1
         health_gained: 10000000
@@ -2627,7 +2627,7 @@ recipes:
         name: Repair Factory
         production_time: 4s
         input:
-            stick: 
+            stick:
                 material: STICK
                 amount: 1
         health_gained: 10000000
@@ -2951,7 +2951,7 @@ recipes:
             black_concrete_powder:
                 material: CONCRETE_POWDER
                 durability: 15
-                amount: 64    
+                amount: 64
     mix_whiteconcrete:
         production_time: 4s
         name: Mix White Concrete
@@ -3271,7 +3271,7 @@ recipes:
             black_concrete:
                 material: CONCRETE
                 durability: 15
-                amount: 64    
+                amount: 64
     repair_concretemixer:
         type: REPAIR
         name: Repair Factory
@@ -3280,7 +3280,7 @@ recipes:
             stick:
                 material: STICK
                 amount: 1
-        health_gained: 10000000   
+        health_gained: 10000000
 ###AGRICULTURE FACTORY RECIPES
     make_saddle:
         production_time: 4s
@@ -3846,7 +3846,7 @@ recipes:
         name: Make Crates
         type: PRODUCTION
         input:
-            chest: 
+            chest:
                 material: CHEST
                 amount: 128
             iron:
@@ -3857,13 +3857,13 @@ recipes:
                 material: CHEST
                 amount: 128
                 lore:
-                 - Crate    
+                 - Crate
     make_chests:
         production_time: 4s
         name: Make Chests
         type: PRODUCTION
         input:
-            log: 
+            log:
                 material: LOG
                 amount: 64
                 durability: -1
@@ -3876,7 +3876,7 @@ recipes:
         name: Make Trapped Chests
         type: PRODUCTION
         input:
-            chest: 
+            chest:
                 material: CHEST
                 amount: 64
             iron:
@@ -3891,7 +3891,7 @@ recipes:
         name: Repurpose Sticks
         type: PRODUCTION
         input:
-            stick: 
+            stick:
                 material: STICK
                 amount: 64
         output:
@@ -4077,7 +4077,7 @@ recipes:
             paper:
                 material: STICK
                 amount: 1
-        health_gained: 10000000  
+        health_gained: 10000000
 ###IRON FORGE RECIPES
     make_anvil:
         production_time: 4s
@@ -4176,7 +4176,7 @@ recipes:
                 material: IRON_PICKAXE
                 amount: 1
                 name: Chisel
-                lore: 
+                lore:
                 - Gives 0 ores
     make_ironpickaxe:
         production_time: 4s
@@ -4425,7 +4425,7 @@ recipes:
         output:
             redstonetorch:
                 material: REDSTONE_TORCH_ON
-                amount: 128          
+                amount: 128
     make_hopper:
         type: PRODUCTION
         name: Make Hoppers
@@ -5010,7 +5010,7 @@ recipes:
                 durability: 0
                 amount: 8
                 name: Vault Bastion
-                lore: 
+                lore:
                  - Prevents block placements and enderpearls
                  - 9 block radius circle protection
                  - 1 hour block placement breaktime
@@ -5040,10 +5040,10 @@ recipes:
                 amount: 8
                 durability: 0
                 name: City Bastion
-                lore: 
+                lore:
                  - Prevents block placements
                  - 51x51 area protection
-                 - 30 minute block placement breaktime  
+                 - 30 minute block placement breaktime
     repair_bastion:
         type: REPAIR
         name: Repair Factory
@@ -5060,7 +5060,7 @@ recipes:
                 name: Energy
                 amount: 16
                 durability: 1
-        health_gained: 10000      
+        health_gained: 10000
 ###COBALT ARMOUR FACTORY RECIPES
     dia_helm_enchant:
         type: PRODUCTION
@@ -5115,7 +5115,7 @@ recipes:
                 amount: 4
                 name: Cobalt Leggings
                 lore:
-                 - Enchantable   
+                 - Enchantable
     dia_boot_enchant:
         type: PRODUCTION
         name: Make Enchantable Cobalt Boots
@@ -5133,7 +5133,7 @@ recipes:
                 amount: 4
                 name: Cobalt Boots
                 lore:
-                 - Enchantable     
+                 - Enchantable
     repair_cobaltarmourfactory:
         type: REPAIR
         name: Repair Factory
@@ -5152,7 +5152,7 @@ recipes:
                 amount: 4
                 lore:
                  - Makes enchantable gear
-        health_gained: 10000    
+        health_gained: 10000
 ###COBALT TOOL FACTORY RECIPES
     dia_pick_enchant:
         type: PRODUCTION
@@ -5189,7 +5189,7 @@ recipes:
                 amount: 9
                 name: Cobalt Axe
                 lore:
-                 - Enchantable      
+                 - Enchantable
     dia_hoe_enchant:
         type: PRODUCTION
         name: Make Enchantable Cobalt Hoes
@@ -5207,7 +5207,7 @@ recipes:
                 amount: 9
                 name: Cobalt Hoe
                 lore:
-                 - Enchantable     
+                 - Enchantable
     dia_shovel_enchant:
         type: PRODUCTION
         name: Make Enchantable Cobalt Shovels
@@ -5248,7 +5248,7 @@ recipes:
                 amount: 9
                 name: Cobalt Sword
                 lore:
-                 - Enchantable    
+                 - Enchantable
     repair_cobalttoolfactory:
         type: REPAIR
         name: Repair Factory
@@ -5262,7 +5262,7 @@ recipes:
                 name: Energy
                 amount: 16
                 durability: 1
-        health_gained: 10000    
+        health_gained: 10000
 ###BASIC CAULDRON RECIPES
     make_xpa:
         type: PRODUCTION
@@ -5273,28 +5273,28 @@ recipes:
                 material: CACTUS
                 amount: 16
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             vine:
                 material: VINE
                 amount: 4
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             netherwart:
                 material: NETHER_STALK
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             beetroot:
                 material: BEETROOT
                 amount: 12
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             lapis:
                 material: INK_SACK
                 durability: 4
                 amount: 2
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             energy:
                 material: GOLDEN_APPLE
                 name: Energy
@@ -5304,7 +5304,7 @@ recipes:
                 material: GLASS_BOTTLE
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
         output:
             emerald_block:
                 material: EMERALD_BLOCK
@@ -5318,29 +5318,29 @@ recipes:
                 material: SUGAR_CANE
                 amount: 12
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             long_grass:
                 material: LONG_GRASS
                 amount: 4
                 durability: 1
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             wheat:
                 material: WHEAT
                 amount: 4
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             pumpkin:
                 material: PUMPKIN
                 amount: 6
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             lapis:
                 material: INK_SACK
                 durability: 4
                 amount: 2
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             energy:
                 material: GOLDEN_APPLE
                 name: Energy
@@ -5350,7 +5350,7 @@ recipes:
                 material: GLASS_BOTTLE
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
         output:
             emerald_block:
                 material: EMERALD_BLOCK
@@ -5364,29 +5364,29 @@ recipes:
                 material: CARROT_ITEM
                 amount: 16
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             long_grass:
                 material: LONG_GRASS
                 amount: 6
                 durability: 1
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             potato:
                 material: POTATO_ITEM
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             pumpkin:
                 material: PUMPKIN
                 amount: 6
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             lapis:
                 material: INK_SACK
                 durability: 4
                 amount: 2
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             energy:
                 material: GOLDEN_APPLE
                 name: Energy
@@ -5396,7 +5396,7 @@ recipes:
                 material: GLASS_BOTTLE
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
         output:
             emerald_block:
                 material: EMERALD_BLOCK
@@ -5410,12 +5410,12 @@ recipes:
                 material: SUGAR_CANE
                 amount: 16
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             vine:
                 material: VINE
                 amount: 4
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             cocoa:
                 material: INK_SACK
                 durability: 3
@@ -5426,13 +5426,13 @@ recipes:
                 material: MELON_BLOCK
                 amount: 6
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             lapis:
                 material: INK_SACK
                 durability: 4
                 amount: 2
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             energy:
                 material: GOLDEN_APPLE
                 name: Energy
@@ -5442,7 +5442,7 @@ recipes:
                 material: GLASS_BOTTLE
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
         output:
             emerald_block:
                 material: EMERALD_BLOCK
@@ -5479,7 +5479,7 @@ recipes:
                 name: Energy
                 amount: 16
                 durability: 1
-        health_gained: 10000     
+        health_gained: 10000
 ###ADVANCED CAULDRON RECIPES
     make_advancedxp1:
         forceInclude: true
@@ -5491,12 +5491,12 @@ recipes:
                 material: MELON_BLOCK
                 amount: 32
                 lore:
-                 - Compacted Item    
+                 - Compacted Item
             red_mushroom:
                 material: RED_MUSHROOM
                 amount: 16
                 lore:
-                 - Compacted Item    
+                 - Compacted Item
             cocoa:
                 material: INK_SACK
                 durability: 3
@@ -5507,34 +5507,34 @@ recipes:
                 material: POTATO_ITEM
                 amount: 64
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             carrot_item:
                 material: CARROT_ITEM
                 amount: 64
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             lapis:
                 material: INK_SACK
                 durability: 4
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             cactus:
                 material: CACTUS
                 amount: 128
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             wheat:
                 material: WHEAT
                 amount: 64
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             sapling:
                 material: SAPLING
                 durability: 0
                 amount: 16
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             energy:
                 material: GOLDEN_APPLE
                 name: Energy
@@ -5544,11 +5544,11 @@ recipes:
                 material: GLASS_BOTTLE
                 amount: 128
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
         output:
             emerald_block:
                 material: EMERALD_BLOCK
-                amount: 128   
+                amount: 128
     make_advancedxp2:
         forceInclude: true
         type: PRODUCTION
@@ -5559,12 +5559,12 @@ recipes:
                 material: PUMPKIN
                 amount: 32
                 lore:
-                 - Compacted Item    
+                 - Compacted Item
             brown_mushroom:
                 material: BROWN_MUSHROOM
                 amount: 16
                 lore:
-                 - Compacted Item    
+                 - Compacted Item
             netherwart:
                 material: NETHER_STALK
                 amount: 32
@@ -5574,34 +5574,34 @@ recipes:
                 material: BEETROOT
                 amount: 64
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             sugar_cane:
                 material: SUGAR_CANE
                 amount: 64
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             lapis:
                 material: INK_SACK
                 durability: 4
                 amount: 8
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             cactus:
                 material: CACTUS
                 amount: 128
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             wheat:
                 material: WHEAT
                 amount: 64
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             sapling:
                 material: SAPLING
                 durability: 0
                 amount: 16
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
             energy:
                 material: GOLDEN_APPLE
                 name: Energy
@@ -5611,11 +5611,11 @@ recipes:
                 material: GLASS_BOTTLE
                 amount: 128
                 lore:
-                 - Compacted Item 
+                 - Compacted Item
         output:
             emerald_block:
                 material: EMERALD_BLOCK
-                amount: 128  
+                amount: 128
     make_netherstar:
         type: PRODUCTION
         name: Make Nether Star
@@ -5628,7 +5628,7 @@ recipes:
         output:
             nether_star:
                 material: NETHER_STAR
-                amount: 1   
+                amount: 1
     repair_advancedcauldron:
         type: REPAIR
         name: Repair Factory
@@ -5645,8 +5645,8 @@ recipes:
                 name: Energy
                 amount: 16
                 durability: 1
-        health_gained: 10000                  
-###RECYCLER RECIPES 
+        health_gained: 10000
+###RECYCLER RECIPES
     melt_cobalt_hoe:
         type: PRODUCTION
         name: Melt Cobalt Hoes
@@ -5657,7 +5657,7 @@ recipes:
                 amount: 10
                 name: Cobalt Hoe
                 lore:
-                 - Enchantable     
+                 - Enchantable
         output:
             cobalt:
                 material: DIAMOND
@@ -5675,7 +5675,7 @@ recipes:
                 amount: 10
                 name: Cobalt Shovel
                 lore:
-                 - Enchantable     
+                 - Enchantable
         output:
             cobalt:
                 material: DIAMOND
@@ -5693,7 +5693,7 @@ recipes:
                 amount: 5
                 name: Cobalt Axe
                 lore:
-                 - Enchantable     
+                 - Enchantable
         output:
             cobalt:
                 material: DIAMOND
@@ -5711,7 +5711,7 @@ recipes:
                 amount: 5
                 name: Cobalt Pickaxe
                 lore:
-                 - Enchantable     
+                 - Enchantable
         output:
             cobalt:
                 material: DIAMOND
@@ -5729,7 +5729,7 @@ recipes:
                 amount: 5
                 name: Cobalt Sword
                 lore:
-                 - Enchantable     
+                 - Enchantable
         output:
             cobalt:
                 material: DIAMOND
@@ -5825,4 +5825,4 @@ recipes:
             emerald:
                 material: EMERALD
                 amount: 5
-        health_gained: 10000   
+        health_gained: 10000
