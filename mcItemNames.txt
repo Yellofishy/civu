@@ -260,7 +260,7 @@ gravel:0,Gravel
 green_record:0,Music Disk (cat)
 grilled_pork:0,Cooked Porkchop
 gunpowder:0,Gunpowder (Sulphur)
-hard_clay:0,Hardened Clay
+HARD_CLAY:0,Hardened Clay
 hay_block:0,Hay Bale
 hopper:0,Hopper
 hopper_minecart:0,Hopper Minecart
