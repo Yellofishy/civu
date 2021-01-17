@@ -252,8 +252,8 @@ gold_plate:0,Weighted Pressure Plate (Light)
 gold_record:0,Music Disk (13)
 gold_spade:0,Gold Shovel
 gold_sword:0,Gold Sword
-golden_apple:0,Stamina
-golden_apple:1,Stamina
+golden_apple:0,Energy
+golden_apple:1,Energy
 grass:0,Grass
 grass_path:0,Grass Path
 gravel:0,Gravel
