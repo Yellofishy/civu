@@ -5225,10 +5225,10 @@ recipes:
         input:
             blaze_powder:
                 material: BLAZE_POWDER
-                amount: 20
+                amount: 16
             diamond:
                 material: DIAMOND
-                amount: 28
+                amount: 24
             glowstone:
                 material: GLOWSTONE
                 amount: 32
